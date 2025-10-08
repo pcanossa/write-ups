@@ -27,5 +27,4 @@ Cada repositório de laboratório possui sua própria pasta. Dentro de cada past
 
 ## 📬 Contato
 
-* **LinkedIn:** [seu-linkedin](https://www.linkedin.com/in/patricia-canossa-gagliardi/)
-* **GitHub:** [seu-github](https://github.com/pcanossa)
+* [**LinkedIn:**](https://www.linkedin.com/in/patricia-canossa-gagliardi/)
