@@ -19,9 +19,9 @@ Cada write-up aqui documenta não apenas a solução técnica, mas também o pro
 
 ## 📂 Estrutura do Repositório
 
-Cada desafio resolvido possui sua própria pasta. Dentro de cada pasta, você encontrará:
-* Um arquivo `README.md` com o write-up detalhado.
-* Quaisquer scripts, notas ou arquivos relevantes utilizados durante o processo.
+Cada repositório de laboratório possui sua própria pasta. Dentro de cada pasta, você encontrará:
+* Um arquivo `indice.md` com os write-ups detalhado.
+* Pastas dos tipos de Laboratórios.
 
 ---
 
