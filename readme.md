@@ -1,11 +1,11 @@
-#  Cybersecurity CTF Write-ups 📖
+#  Cybersecurity Write-ups 📖
 
 ---
 
 
 ## Sobre o Repositório
 
-Olá! Meu nome é Patrícia. Este repositório contém o write-ups de laboratórios de aprendizado para pentest, CTF, casos forenses, e afins de segurança cibernética.
+Olá! Meu nome é Patrícia. Este repositório contém o write-ups de laboratórios de aprendizado, e casos reais, para pentest, CTF, casos forenses, e afins de segurança cibernética.
 
 Cada write-up aqui documenta não apenas a solução técnica, mas também o processo de raciocínio, os obstáculos enfrentados e as lições aprendidas.
 
