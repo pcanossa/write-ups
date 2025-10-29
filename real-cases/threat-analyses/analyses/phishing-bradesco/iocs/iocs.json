@@ -1,0 +1,164 @@
+{
+  "threat_report": {
+    "title": "Campanha de Phishing Bradesco / American Express",
+    "analyst": "Patrícia Canossa Gagliardi",
+    "date": "2025-10-27",
+    "summary": "Campanha de phishing bancário com uso de infraestrutura em nuvem (Google Cloud, RouterHosting, Linode/Akamai) para redirecionamento, mascaramento e exfiltração de credenciais financeiras via scripts JavaScript e API PHP.",
+    "iocs": [
+      {
+        "type": "domain",
+        "value": "redexclusiv-975736767249.southamerica-east1.run.app",
+        "description": "Link inicial de phishing hospedado na Google Cloud Run",
+        "risk_level": "medium",
+        "notes": "Possui cloaking por sistema operacional; bloqueia acessos Linux"
+      },
+      {
+        "type": "ip",
+        "value": "34.143.78.2",
+        "description": "IP resolvido do domínio inicial (Google Cloud)",
+        "risk_level": "low",
+        "notes": "Infraestrutura legítima, mas usada indevidamente"
+      },
+      {
+        "type": "domain",
+        "value": "bradescard-americanblackexclusivo.com",
+        "description": "Domínio fraudulento principal da campanha",
+        "risk_level": "critical",
+        "notes": "Listada em PhishTank; forte indício de brandjacking"
+      },
+      {
+        "type": "ip",
+        "value": "172.86.126.117",
+        "description": "IP inicial vinculado ao domínio de phishing",
+        "risk_level": "critical",
+        "notes": "Hospedado em RouterHosting LLC; Apache 2.4.41 vulnerável e SSH 8.2p1 aberto"
+      },
+      {
+        "type": "ip",
+        "value": "172.237.50.16",
+        "description": "Novo IP usado pelo domínio após migração",
+        "risk_level": "medium",
+        "notes": "Infraestrutura Linode/Akamai; evasão de detecção"
+      },
+      {
+        "type": "ip",
+        "value": "162.241.2.55",
+        "description": "Resolução posterior do domínio fraudulento",
+        "risk_level": "medium",
+        "notes": "Provável transição DNS"
+      },
+      {
+        "type": "ip",
+        "value": "88.221.161.37",
+        "description": "IP referenciado no código HTML do site falso",
+        "risk_level": "low",
+        "notes": "CDN da Akamai; sem atividade maliciosa confirmada"
+      },
+      {
+        "type": "javascript",
+        "value": "/js/navegg.js",
+        "description": "Coleta de dados via plataforma Navegg",
+        "risk_level": "medium",
+        "notes": "Uso de tracking legítimo reaproveitado para perfis de vítima"
+      },
+      {
+        "type": "javascript",
+        "value": "/js/lembrarAgCta.js",
+        "description": "Armazena dados bancários em cookie Base64",
+        "risk_level": "critical",
+        "notes": "Roubo de credenciais de agência e conta"
+      },
+      {
+        "type": "javascript",
+        "value": "/js/fbevents.js",
+        "description": "Script oficial do Meta Pixel",
+        "risk_level": "low",
+        "notes": "Usado para tracking ou retargeting"
+      },
+      {
+        "type": "javascript",
+        "value": "/js/validaFormNaoCorrentista.js",
+        "description": "Valida CPF e envia para endpoint remoto",
+        "risk_level": "critical",
+        "notes": "Roubo de CPF e dados pessoais"
+      },
+      {
+        "type": "javascript",
+        "value": "/js/detect-mobile.js",
+        "description": "Detecta OS móvel e redireciona links",
+        "risk_level": "high",
+        "notes": "Redireciona para apps falsos ou deep links maliciosos"
+      },
+      {
+        "type": "javascript",
+        "value": "/js/one-tag.js",
+        "description": "Intercepta cliques e envia credenciais bancárias",
+        "risk_level": "critical",
+        "notes": "Exfiltra dados para thunderhead.com via siteKey=ONE-WDA4KRKODB-1484"
+      },
+      {
+        "type": "domain",
+        "value": "thunderhead.com",
+        "description": "CDN usada por one-tag.js",
+        "risk_level": "medium",
+        "notes": "Infraestrutura legítima (Cloudflare) usada como proxy"
+      },
+      {
+        "type": "ip",
+        "value": "141.193.213.20",
+        "description": "IP da thunderhead.com (Cloudflare)",
+        "risk_level": "low",
+        "notes": "CDN legítima; sem comprometimento"
+      },
+      {
+        "type": "ip",
+        "value": "141.193.213.21",
+        "description": "IP da thunderhead.com (Cloudflare)",
+        "risk_level": "low",
+        "notes": "CDN legítima; sem comprometimento"
+      },
+      {
+        "type": "javascript",
+        "value": "/js/index.js",
+        "description": "Captura dados bancários do login (agência, conta, dígito)",
+        "risk_level": "critical",
+        "notes": "Manipula e envia dados para o servidor malicioso"
+      },
+      {
+        "type": "javascript",
+        "value": "/js/identificacao.js",
+        "description": "Controla teclado virtual e exfiltra senha de 4 dígitos",
+        "risk_level": "critical",
+        "notes": "Comunicação constante com api.php"
+      },
+      {
+        "type": "php",
+        "value": "/api.php",
+        "description": "Endpoint de comando e controle (C2)",
+        "risk_level": "critical",
+        "notes": "Recebe dados capturados das vítimas"
+      },
+      {
+        "type": "php",
+        "value": "/identificacao.php",
+        "description": "Página de login falso com teclado virtual",
+        "risk_level": "critical",
+        "notes": "Imita página legítima do Bradesco"
+      },
+      {
+        "type": "url",
+        "value": "https://blog.veroo.com.br/giovani-e-adenir-oliveira-da-terra-ao-seu-paladar/",
+        "description": "Página legítima usada como redirecionamento (decoy)",
+        "risk_level": "low",
+        "notes": "Usada para mascarar o tráfego"
+      }
+    ],
+    "mitre_attack": [
+      "T1566.002 - Phishing: Link Malicioso",
+      "T1056.001 - Input Capture (Web Form)",
+      "T1071.001 - Application Layer Protocol (HTTP/S)",
+      "T1036 - Masquerading",
+      "T1568.002 - Dynamic Resolution (DNS)"
+    ]
+  }
+}

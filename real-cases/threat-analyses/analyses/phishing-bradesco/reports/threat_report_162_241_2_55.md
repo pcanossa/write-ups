@@ -1,139 +1,145 @@
-# Relatório de Threat Intelligence – IP **139.162.174.122**
+# Relatório de Threat Intelligence – IP **162.241.2.55**
 
-> **Fonte dos dados**: Shodan, IPInfo.io, ARIN / RIPE RDAP, URLScan.io (sem resultados).  
+> **Fonte dos dados**: Shodan, IPInfo.io, ARIN / RIPE RDAP, URLScan.io (sem resultados relevantes).  
 > **Última coleta Shodan**: 2025‑10‑17.  
 
-> **Observação**: Todos os detalhes abaixo foram extraídos a partir dos dados disponibilizados para o endereço **162.241.2.55**, que pertence ao mesmo bloco de endereços e está associado à mesma organização (Unified Layer / Network Solutions). Não foram encontrados dados específicos para o IP 139.162.174.122, portanto o relatório está baseado no IP observado nas fontes.
+---
+
+## 1. Resumo Executivo  
+
+- **Localização**: EUA – Provo/UT (ARIN) / Atlanta/GA (IPInfo).  
+- **ASN / ISP**: AS19871 – *Network Solutions, LLC* (operado por **Unified Layer**).  
+- **Serviços expostos**: 22 portas TCP, dentre elas serviços de administração remota (SSH, cPanel/WHM), bases de dados (MySQL), servidores de e‑mail (Exim, Dovecot) e FTP público.  
+- **Indicadores de comportamento suspeito**: o endereço IP hospeda centenas de domínios **phishing** e sites de “landing pages” que redirecionam para blogs legítimos (ex.: `blog.veroo.com.br`). Vários dos domínios apontam para a mesma página de “Hospedagem de Site com Domínio Grátis – HostGator”, sugestão de uso de hosting barato para abuso.  
+- **Vulnerabilidades conhecidas**: versões antigas de OpenSSH 7.4 e Exim 4.98.1 apresentam diversas CVEs com severidade de **Critical a High** (ex.: CVE‑2025‑32728, CVE‑2025‑30232).  
+
+**Conclusão**: o IP está sendo usado como *hosting de baixo custo* para múltiplos sites, inclusive de phishing, e oferece vários serviços de administração expostos que apresentam vulnerabilidades críticas. É altamente provável que o ator malicioso explore a combinação de serviços legados e credenciais fracas para conduzir **ataques de força‑bruta, exploração de CVE e coleta de credenciais**.
 
 ---
 
-## 1. Resumo Executivo
-- **Localização**: Estados Unidos – principalmente Georgia (Atlanta) segundo IPInfo.io, com registro de sede da organização em Provo‑UT (ARIN).  
-- **Provedor (ISP)**: Network Solutions, LLC (ASN AS19871 – “UNIFIEDLAYER‑NETWORK‑16”).  
-- **Serviços expostos**: Web (HTTP/HTTPS), FTP, SSH, SMTP/SMTPS, IMAP/POP3, MySQL, além de portas de gerenciamento de hospedagem (cPanel/WHM).  
-- **Comportamento suspeito**: O IP aparece em múltiplos escaneamentos de URLScan.io como suporte a domínios de phishing e campanhas de engenharia social. Vários *tags* de Shodan (eol‑product, starttls) indicam potenciais versões desatualizadas de softwares críticos.  
-- **Portas críticas**: 21, 22, 26, 53 (TCP/UDP), 80, 110, 143, 443, 465, 587, 993, 995, 2082‑2087, 2095, 2222, 3306.  
-- **Vulnerabilidades correlacionadas**: OpenSSH 7.4 (diversas CVEs de elevação de privilégio, bypass de autenticação, execução remota), Exim 4.98.1 (use‑after‑free, vulnerabilidades de escalonamento), MySQL 5.7.23 (exposição de informações).  
+## 2. Análise de Comportamento  
 
-Em suma, o endereço hospeda um ambiente de hospedagem compartilhada (HostGator/Unified Layer) amplamente utilizado por diversos domínios, alguns dos quais são identificados como maliciosos (phishing, campanhas de spam).  
+| Evidência | Interpretação |
+|-----------|---------------|
+| **Tag “database”, “eol‑product”, “starttls”** (Shodan) | Indica que o host executa serviços de banco de dados (MySQL) e servidores de e‑mail que suportam STARTTLS, porém alguns destes produtos estão em fim de vida. |
+| **Serviços de e‑mail** (Exim 4.98.1 nas portas 26, 465, 587) | Versão vulnerável a uso‑after‑free (CVE‑2025‑30232) que pode permitir elevação de privilégio a usuários com acesso à linha de comando. |
+| **SSH 7.4** (portas 22 e 2222) | Várias CVEs críticas (ex.: CVE‑2025‑32728, CVE‑2025‑26465) que podem ser exploradas para bypass de autenticação ou ataque de Row‑Hammer. |
+| **Pure‑FTPd** (porta 21) | Serviço FTP aberto, sem indícios de restrição de acesso; possibilidade de login anônimo ou credenciais fracas. |
+| **cPanel/WHM** (portas 2082‑2087) | Interfaces de administração de hospedagem web (login “cPanel”) expostas ao público; alvo clássico de força‑bruta e exploração de vulnerabilidades de plugins. |
+| **MySQL 5.7.23** (porta 3306) | Versão ainda suportada, porém pode ser alvo de bruteforce se não estiver adequadamente protegida. |
+| **Múltiplos domínios phishing** (URLScan) | O IP serve como “forwarder” ou página de captura para domínios suspeitos (ex.: `bradescard-americanblackexclusivo.com`, `blackconviteplus.com`). Muitas dessas URLs apontam para o mesmo conteúdo de blog, sugerindo uso de *cloaking* ou *link‑bait*. |
+| **Certificados SSL** | Todos emitidos por **Sectigo** com validade de 1 ano (2025‑2026). Não há indícios de comprometimento na cadeia, mas a presença de HTTPS não impede abuso de conteúdo. |
+| **Abuse contacts** (ARIN) | EIG‑Abuse Mitigation (email `IARPOC@Newfold.com`) e NOC da Unified Layer (email `abuse@bluehost.com`). Estes contatos podem ser acionados para reporte de abuso. |
 
----
-
-## 2. Análise de Comportamento
-| Indicador | Evidência |
-|-----------|-----------|
-| **Serviços Web** | Apache HTTP nas portas 80/443, respostas HTTP 302/200 com redirecionamento para domínios de marketing e página de boas‑vindas HostGator. |
-| **Serviços de e‑mail** | Exim 4.98.1 nas portas 26, 465, 587, 25 (não exposta no dump, mas inferida). Respostas SMTP “220‑br904.hostgator.com.br ESMTP Exim 4.98.1”. |
-| **Acesso SSH** | OpenSSH 7.4 nas portas 22 e 2222, com banner completo e lista de algoritmos (inclui **diffie‑hellman‑group‑exchange‑sha256**). |
-| **cPanel/WHM** | Portas 2082/2083 (HTTP), 2086/2087 (HTTPS) retornam páginas de login de cPanel/WHM. |
-| **Banco de Dados** | MySQL 5.7.23 na porta 3306, “Protocol Version: 10”. |
-| **Outros** | FTP (Pure‑FTPd), Dovecot IMAP/POP3 (110, 143, 993, 995). |
-| **Abuso detectado** | Diversas buscas URLScan.io retornam domínios de phishing (“bradescard‑americanblackexclusivo.com”, “regularizandocpf.com”, “600actividadesyejercicios.shop”, etc.) apontando para este IP, indicando **uso como infraestrutura de phishing**. |
-| **Tags Shodan** | `database`, `eol-product`, `starttls` – sugerindo softwares em fim de vida e uso de STARTTLS. |
-| **Vulnerabilidades divulgadas** | Várias CVEs associadas ao OpenSSH 7.4 (ex.: CVE‑2025‑32728, CVE‑2025‑30232, CVE‑2025‑26465, CVE‑2023‑38408) e ao Exim 4.98.1 (ex.: CVE‑2025‑30232). |
-
-**Conclusão:** O host funciona como um servidor de hospedagem compartilhada, mas está sendo usado por atores maliciosos para distribuir sites de phishing, explorar vulnerabilidades conhecidas e conduzir atividades de envio de spam. A presença de softwares legados aumenta a superfície de ataque.  
+**Padrão de uso**: o IP funciona como um *multi‑tenant* de hospedagem barata (possivelmente ambiente **cPanel/WHM** compartilhado). Atacantes aproveitam a baixa fricção de criação de contas para hospedar páginas de phishing ou redirecionamentos maliciosos, enquanto tiram proveito de serviços de gerenciamento (SSH, FTP) que permanecem abertos e desatualizados.
 
 ---
 
-## 3. Superfície de Ataque
-### 3.1 Portas abertas e serviços
+## 3. Superfície de Ataque  
+
+### 3.1 Portas abertas & serviços
 
 | Porta | Serviço | Versão / Produto | Observações |
 |------|---------|------------------|-------------|
-| 21 | **Pure‑FTPd** | 1.0.x (banner puro) | Permite login anônimo? |
-| 22 | **OpenSSH** | 7.4 | Vulnerável a múltiplas CVEs (lista abaixo). |
-| 26 | **Exim** | 4.98.1 | Use‑after‑free, potencial esc escalation. |
-| 53 (TCP/UDP) | **DNS** | BIND 9.11.4‑P2 (RedHat) | Respostas internas. |
-| 80 | **Apache HTTP** | 2.4.x (sem versão explícita) | Página padrão HostGator. |
-| 110 | **Dovecot POP3** | 2.x | |
-| 143 | **Dovecot IMAP** | 2.x | |
-| 443 | **Apache HTTPS** | 2.4.x | Redirecionamento para “explorefreeresults.com”. |
-| 465 | **Exim (SMTPS)** | 4.98.1 | |
-| 587 | **Exim (STARTTLS)** | 4.98.1 | |
-| 993 | **Dovecot IMAPS** | 2.x | |
-| 995 | **Dovecot POP3S** | 2.x | |
-| 2082 | **cPanel (HTTP)** | 11.x | Login cPanel (não seguro). |
-| 2083 | **cPanel (HTTPS)** | 11.x | Login cPanel (HTTPS). |
-| 2086 | **WHM (HTTP)** | 11.x | Login WHM (não seguro). |
-| 2087 | **WHM (HTTPS)** | 11.x | Login WHM (HTTPS). |
-| 2095 | **Webmail (HTTP)** | 11.x | |
-| 2222 | **OpenSSH (Alternate)** | 7.4 | |
-| 3306 | **MySQL** | 5.7.23‑23 | |
+| 21   | **Pure‑FTPd** | `Pure-FTPd 1.0.49` (TLS) | Permitido login anônimo? |
+| 22   | **OpenSSH** | 7.4 | CVEs críticas (CVE‑2025‑32728, CVE‑2025‑26465, etc.) |
+| 26   | **Exim smtpd** | 4.98.1 | Use‑after‑free (CVE‑2025‑30232) |
+| 53   | **DNS** (BIND/ISC) | 9.11.4‑P2‑RedHat | Normal |
+| 80   | **Apache httpd** | 2.4.x | Servindo página padrão HostGator |
+| 110  | **Dovecot POP3** | 2.x | TLS suportado |
+| 143  | **Dovecot IMAP** | 2.x | TLS suportado |
+| 2082 | **cPanel (HTTP)** |  | Login cPanel (sem TLS) |
+| 2083 | **cPanel (HTTPS)** |  | Login cPanel (TLS) |
+| 2086 | **WHM (HTTP)** |  | Login WHM (sem TLS) |
+| 2087 | **WHM (HTTPS)** |  | Redirecionamento para host “br904.hostgator.com.br” |
+| 2095 | **Webmail** (Roundcube) |  | Login webmail |
+| 2222 | **OpenSSH** (alternativa) | 7.4 | Similar à porta 22 |
+| 3306 | **MySQL** | 5.7.23‑23 | Autenticação `mysql_native_password` |
+| 465  | **Exim (TLS)** | 4.98.1 | CVE‑2025‑30232 (high) |
+| 587  | **Exim (STARTTLS)** | 4.98.1 | CVE‑2025‑30232 (high) |
+| 993  | **Dovecot IMAPS** | 2.x | TLS |
+| 995  | **Dovecot POP3S** | 2.x | TLS |
 
-### 3.2 Vulnerabilidades (CVE) identificadas pelo Shodan
-| Porta | CVE | CVSS* | Breve descrição |
-|------|-----|-------|-----------------|
-| 22 / 2222 | **CVE‑2025‑32728** | 4.3 | `DisableForwarding` não cumpre documentação (X11/agent). |
-| 22 / 2222 | **CVE‑2025‑30232** | 8.1 | Use‑after‑free em Exim 4.96‑4.98.1 (escalonamento). |
-| 22 / 2222 | **CVE‑2025‑26465** | 6.8 | Ataque “machine‑in‑the‑middle” via `VerifyHostKeyDNS`. |
-| 22 / 2222 | **CVE‑2023‑51767** | 7.0 | Row‑hammer para bypass de autenticação (DRAM). |
-| 22 / 2222 | **CVE‑2023‑51385** | 6.5 | Injeção de comando via nome de usuário/host com metacaracteres. |
-| 22 / 2222 | **CVE‑2023‑48795** | 5.9 | “Terrapin attack” – downgrade de criptografia. |
-| 22 / 2222 | **CVE‑2023‑38408** | 9.8 | Execução remota via carga mal‑formada PKCS#11 em ssh‑agent. |
-| 22 / 2222 | **CVE‑2021‑41617** | 7.0 | Escalada de privilégio via `AuthorizedKeysCommand`. |
-| 22 / 2222 | **CVE‑2020‑15778** | 7.4 | Injeção de comando em scp. |
-| 26 / 465 / 587 | **CVE‑2025‑30232** | 8.1 | (mesma vulnerabilidade de Exim acima). |
-| (Outras portas) | **Nenhuma vulnerabilidade explícita listada** | — |  |
+### 3.2 Vulnerabilidades (CVEs) identificadas
 
-\*CVSS baseado em dados públicos; a presença de vulnerabilidades depende da configuração real do serviço.
+| CVE | Severidade* | Produto | Resumo |
+|-----|------------|--------|--------|
+| **CVE‑2025‑32728** | Critical | OpenSSH ≤ 9.9 | `DisableForwarding` não impede X11/agent forwarding. |
+| **CVE‑2025‑30232** | High | Exim 4.96‑4.98.1 | Uso‑after‑free → elevação de privilégio para usuários de linha de comando. |
+| **CVE‑2025‑26465** | High | OpenSSH ≤ 9.9 | Possibilidade de ataque *memory‑exhaustion* quando `VerifyHostKeyDNS` está habilitado. |
+| **CVE‑2023‑51767** | High | OpenSSH ≤ 10.0 | Possível *row‑hammer* para bypass de autenticação (requer co‑location). |
+| **CVE‑2023‑51385** | Medium | OpenSSH ≤ 9.6 | Injeção de comandos ao usar nomes de usuário/host com metacaracteres. |
+| **CVE‑2023‑48795** | Medium | OpenSSH (extensions) | “Terrapin attack” – bypass de integridade da conexão SSH. |
+| **CVE‑2023‑38408** | Critical | OpenSSH (PKCS#11) | Execução remota de código via caminho de biblioteca não confiável. |
+| **CVE‑2021‑41617** | High | OpenSSH ≤ 8.8 | Escalada de privilégio via `AuthorizedKeysCommand` quando executado como outro usuário. |
+| **CVE‑2021‑36368** | Low | OpenSSH ≤ 8.9 | Possível confusão de autenticação FIDO/SSH. |
+| **CVE‑2020‑15778** | High | OpenSSH ≤ 8.3p1 | Injeção de comandos via argumento `scp`. |
+| **CVE‑2020‑14145** | Medium | OpenSSH ≤ 8.4 | Vazamento de informações via algoritmo de negociação. |
+| **CVE‑2019‑6111** | Medium | OpenSSH 7.9 | Manipulação de nomes de arquivo via servidor `scp` malicioso. |
+| **CVE‑2019‑6110** | High | OpenSSH 7.9 | Manipulação de saída `stderr` permite esconder arquivos. |
+| **CVE‑2019‑6109** | High | OpenSSH 7.9 | Uso de códigos de controle ANSI para esconder dados. |
+| **CVE‑2018‑20685** | Medium | OpenSSH 7.9 | Bypass de restrições via nome de arquivo `.` ou vazio. |
+| **CVE‑2018‑15919** | Medium | OpenSSH ≤ 7.8 | Enumeração de usuários via GSSAPI. |
+| **CVE‑2018‑15473** | Medium | OpenSSH ≤ 7.7 | Enumeração de usuários por tempo de resposta. |
+| **CVE‑2017‑15906** | Medium | OpenSSH ≤ 7.6 | Criação de arquivos zero‑byte via `sftp-server`. |
+| **CVE‑2016‑20012** | Medium | OpenSSH ≤ 8.7 | Enumerar usuários/keys via `sshd`. |
+| **CVE‑2008‑3844** | Critical | OpenSSH (RedHat 4/5) | Trojan inserido em pacotes “signed” – fora de escopo aqui. |
+| **CVE‑2007‑2768** | Medium | OpenSSH (OPIE) | Enumeração de usuários OPIE. |
+
+\*Classificação baseada no *CVSS* presente nos dados Shodan (Critical = 9‑10, High = 7‑8.9, Medium = 4‑6.9, Low = 0‑3.9).
 
 ---
 
-## 4. Informações de Rede e Geográficas
+## 4. Informações de Rede e Geográficas  
+
 | Campo | Valor |
 |-------|-------|
-| **ASN** | **AS19871** – “UNIFIEDLAYER‑NETWORK‑16”. |
-| **Organização** | **Unified Layer** (Network Solutions, LLC). |
-| **ISP** | **Network Solutions, LLC**. |
-| **País** | **Estados Unidos**. |
-| **Região / Estado** | **Georgia (Atlanta)** – IPInfo.io; registro ARIN indica endereço da organização em **Provo, UT**. |
-| **Cidade** | Atlanta, GA (IPInfo) / Provo, UT (RDAP). |
-| **Bloqueio/filas** | Não há registros de bloqueio ativo nas bases públicas, porém o IP está presente em listas de observação de abuso (EIG‑Abuse Mitigation). |
-| **Entidades de contato de abuso** | - **EIG‑Abuse Mitigation** – e‑mail: IARPOC@Newfold.com, telefone +1‑877‑659‑6181.<br>- **Network Operations Center (NOC2320‑ARIN)** – e‑mail: abuse@bluehost.com, telefone +1‑801‑765‑9400. |
+| **IP** | 162.241.2.55 |
+| **Hostname** | `162-241-2-55.unifiedlayer.com` |
+| **ASN** | AS19871 |
+| **Organização** | *Network Solutions, LLC* – operado por **Unified Layer** (HostGator/Bluehost). |
+| **País** | United States |
+| **Região / Cidade** | Provo, Utah (ARIN) / Atlanta, Georgia (IPInfo) – discrepância típica de data‑center. |
+| **ISP** | Network Solutions, LLC |
+| **Bloco CIDR** | 162.240.0.0/15 |
+| **Data de registro do bloco** | 22 ago 2013 |
+| **Data da última atualização** | 22 set 2025 |
+| **Contatos de abuso** | `IARPOC@Newfold.com` (EIG‑Abuse), `abuse@bluehost.com` (NOC), telefone +1‑801‑765‑9400. |
+| **Tipo de rede** | Direct Allocation (não transitória). |
 
 ---
 
-## 5. Recomendações de Investigação e Mitigação (focadas no risco)
-1. **Correlacionar logs de firewall e IDS/IPS** para os seguintes padrões:  
-   - Tentativas de conexão nas portas SSH (22/2222) e FTP (21).  
-   - Tráfego SMTP/SMTPS (26, 465, 587) com volumes anômalos (spam, phishing).  
-   - Acessos à interface cPanel/WHM (2082‑2087, 2095) a partir de IPs externos não autorizados.  
+## 5. Recomendações de Investigação & Mitigação (Próximos passos)
 
-2. **Bloquear ou filtrar** permanentemente:  
-   - Portas não‑necessárias ao seu ambiente (por exemplo, 21, 26, 2082‑2087, 2095) caso não haja uso legítimo.  
-   - Tráfego de origem externa para SSH, a menos que seja estritamente necessário (usar VPN ou bastion host).  
+1. **Bloqueio de portas de gerenciamento**  
+   - Imediatamente bloquear inbound nas portas **22 / 2222 (SSH)**, **2082‑2087 (cPanel/WHM)** e **3306 (MySQL)** se não houver necessidade explícita.  
+   - Restringir o acesso a **FTP (21)** a IPs confiáveis ou desativá‑lo.
 
-3. **Aplicar patches/upgrade**:  
-   - Atualizar OpenSSH para versão > 8.8 (corrige a maioria das CVEs listadas).  
-   - Atualizar Exim para a versão mais recente (≥ 4.99) ou migrar para um MTA alternativo.  
-   - Atualizar MySQL (≥ 5.7.34 ou migrar para 8.x).  
-   - Atualizar Pure‑FTPd para a última versão ou desativar o serviço se não for usado.  
+2. **Hardening de serviços**  
+   - Atualizar **OpenSSH** para ≥ 9.8 (corrige CVE‑2025‑32728, 38408, 26465).  
+   - Atualizar **Exim** para versão ≥ 4.99 (corrige CVE‑2025‑30232).  
+   - Desabilitar **login anônimo** no Pure‑FTPd ou remover o serviço.  
+   - Reforçar a política de senhas e habilitar **autenticação por chave pública** no SSH.  
 
-4. **Hardenização de serviços**:  
-   - Desativar `root` login via SSH, usar autenticação baseada em chaves.  
-   - Restringir o uso do módulo `STARTTLS` em Exim, aplicar políticas de SPF/DKIM/DMARC.  
-   - Configurar regras de rate‑limiting / fail2ban para tentativas de login falhas.  
+3. **Monitoramento de logs**  
+   - Coletar e analisar logs de autenticação SSH, FTP, MySQL e web (cPanel).  
+   - Procurar tentativas de brute‑force, comando “sudo” inesperado ou uploads de arquivos suspeitos.  
 
-5. **Monitoramento de ameaças externas**:  
-   - Inscrever o endereço IP em feeds de reputação (AbuseIPDB, Spamhaus, Emerging Threats).  
-   - Configurar alertas de detecção de “phishing domains” associados ao IP nas plataformas de threat intel (e.g., URLScan, VirusTotal).  
-   - Revisar periodicamente a lista de domínios apontados para o IP (muitos apontam para sites de phishing).  
+4. **Varredura de malware**  
+   - Executar anti‑malware no filesystem do servidor (ex.: ClamAV, Malwarebytes) para detectar possíveis scripts de phishing ou webshells.  
 
-6. **Análise forense**:  
-   - Se houver indícios de comprometimento, coletar arquivos de log (SSH, exim, Apache) dos últimos 30 dias.  
-   - Verificar scripts ou webshells nas áreas de cPanel/WHM (públicas e privadas).  
-   - Auditar contas de usuários criados recentemente nos serviços de hospedagem.  
+5. **Revisão de aplicações web**  
+   - Verificar vulnerabilidades de **cPanel/WHM plugins**, **Roundcube**, **Dovecot/Exim** (ex.: permissões de arquivos, scripts PHP desatualizados).  
+   - Aplicar **WAF** (Web Application Firewall) ou regras de bloqueio baseadas em URI (ex.: `/login`, `/admin`).  
 
-7. **Comunicação com provedores**:  
-   - Notificar o Abuse Contact da Network Solutions (IARPOC@Newfold.com) sobre os abusos detectados.  
-   - Solicitar remoção ou bloqueio de domínios de phishing hospedados no IP, caso seja um cliente de hospedagem.  
+6. **Relatório e comunicação**  
+   - Notificar os provedores de abuso (EIG‑Abuse, Bluehost) com evidências de uso de phishing.  
+   - Marcar os domínios listados nas análises de URLScan como “phishing” nos sistemas de filtragem de e‑mail e DNS (ex.: SURBL, Google Safe Browsing).  
+
+7. **Inteligência adicional**  
+   - Consultar bases de dados de phishing (PhishTank, OpenPhish) para correlacionar novos domínios associados ao IP.  
+   - Verificar se o IP aparece em listas de “malicious IP” (Spamhaus, AbuseIPDB) e, se necessário, aplicar *blocklist* em firewalls corporativos.  
 
 ---
 
-## 6. Conclusão
-O endereço analisado (representado pelo bloco 162.241.0.0/15, com o IP 162.241.2.55) funciona como **infraestrutura de hospedagem compartilhada** amplamente utilizada por sites legítimos e, ao mesmo tempo, serve de base para **campanhas de phishing, spam e possivelmente botnet**. A presença de softwares desatualizados (OpenSSH 7.4, Exim 4.98.1, MySQL 5.7) cria múltiplas **vulnerabilidades críticas** que podem ser exploradas por agentes maliciosos. 
-
-A aplicação das recomendações acima – especialmente **patching**, **restrição de portas**, **monitoramento de abuso** e **colaboração com o ISP** – é essencial para reduzir a superfície de ataque e impedir que o IP continue a ser usado como vetor de atividades maliciosas.  
-
----
+**Nota**: Este relatório concentra‑se na identificação de riscos e nas ações de investigação. As recomendações de mitigação não detalham *como* aplicar patches ou configurações específicas, pois o foco é orientar a equipe de segurança na priorização de respostas.

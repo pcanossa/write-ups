@@ -1,3 +1,4 @@
+ffrom shodan import Shodan, APIError
 from ollama import Client
 import requests
 import sys
@@ -5,7 +6,9 @@ import json
 
 client=Client()
 
-ip = '172.237.50.16'
+api_shodan = Shodan("k6RgThpf7oJymLKLCGLiEK4l78IZvd6I")
+
+ip = '161.35.50.50'
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
@@ -38,8 +41,6 @@ try:
 
     url_scan_reponse = requests.get(f'https://urlscan.io/api/v1/search/?q=ip:{ip}', headers=headers)
     url_scan_reponse.raise_for_status()
-
-
 
     # Combinar todos os dados em uma única string para a IA
     combined_content = f"""
@@ -85,7 +86,7 @@ Você é um especialista em Threat Intelligence. Analise os dados brutos forneci
 2.  **Análise de Comportamento:** Avalie se há indícios de atividade maliciosa, como associação com botnets, scanners, ou servidores de C2, com base nos dados do Shodan e outras fontes.
 3.  **Superfície de Ataque:**
     - Liste todas as **portas abertas** e os **serviços** correspondentes.
-    - Liste todas as **vulnerabilidades (CVEs)** identificadas pelo Shodan, se houver.
+    - Liste **vulnerabilidades (CVEs)** identificadas pelo Shodan, se houver, de forma breve, apontando sua relação com possíveis comportamentos maliciosos.
 4.  **Informações de Rede e Geográficas:**
     - **ASN:** Número e nome da organização.
     - **Provedor (ISP):** Nome do provedor.
@@ -97,10 +98,10 @@ Você é um especialista em Threat Intelligence. Analise os dados brutos forneci
 **Formato:** Use Markdown e responda em **português do Brasil**.
 
 **Sempre Iniciar o relatório com o seguinte formato de cabeçalho**
-# Relatório de Threat Intelligence – IP **139.162.174.122**
+# Relatório de Threat Intelligence – IP **(Número do IP Analisado)**
 
-> **Fonte dos dados**: Shodan, IPInfo.io, ARIN / RIPE RDAP, URLScan.io (sem resultados).  
-> **Última coleta Shodan**: 2025‑10‑17.  
+> **Fonte dos dados**: (Fontes utilizadas, ex: Shodan, IPInfo.io, ARIN / RIPE RDAP, URLScan.io).  
+> **Última coleta Shodan**: (Data de Última Coleta).  
 """.strip()
 
 message = [
