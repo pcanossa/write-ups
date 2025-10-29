@@ -107,6 +107,8 @@ Para burlar o filtro existente de acesso, o link presente no email, foi acessado
 
 ``https://bradescard-americanblackexclusivo.com``
 
+O site malicioso, demonstrou grande similaridade de design com o site verdadeiro do banco, mostrando sofisticação do golpe em oferecer credibilidade para a vítima dsobre osite acessado.
+
 # 6- Busca de IP do domínio após direcionamento para site malicioso
 
 A busca pelo IP, foi realizada por um rápido comando ping retornando o IP ``172.86.126.117``
@@ -493,6 +495,524 @@ $.ajax({
 # 14- Observação sobre a ``api.php``
 
 Embora tentando seu acesso, não foi possível, por estar sendo executada em server side. Quando tentado seu acesso via ``https://bradescard-americanblackexclusivo.com/api.php``, foi exibido um documento vazio.
+
+# 15- Análise de WHOIS do domínio ``bradescard-americanblackexclusivo.com``
+
+Os dados de registro do domínio, foram acessados via VM Kali, pelo comando WHois, que retornoi, como esperado, dados ocultados pelo GoDaddy.
+
+┌──(kali㉿kali)-[~]
+└─$ whois bradescard-americanblackexclusivo.com            
+   Domain Name: BRADESCARD-AMERICANBLACKEXCLUSIVO.COM
+   Registry Domain ID: 3022306853_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.godaddy.com
+   Registrar URL: http://www.godaddy.com
+   Updated Date: 2025-09-23T00:17:38Z
+   Creation Date: 2025-09-23T00:17:37Z
+   Registry Expiry Date: 2026-09-23T00:17:37Z
+   Registrar: GoDaddy.com, LLC
+   Registrar IANA ID: 146
+   Registrar Abuse Contact Email: abuse@godaddy.com
+   Registrar Abuse Contact Phone: 480-624-2505
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Name Server: NS63.DOMAINCONTROL.COM
+   Name Server: NS64.DOMAINCONTROL.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2025-10-29T15:04:22Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+Domain Name: bradescard-americanblackexclusivo.com
+Registry Domain ID: 3022306853_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.godaddy.com
+Registrar URL: https://www.godaddy.com
+Updated Date: 2025-09-22T19:17:38Z
+Creation Date: 2025-09-22T19:17:37Z
+Registrar Registration Expiration Date: 2026-09-22T19:17:37Z
+Registrar: GoDaddy.com, LLC
+Registrar IANA ID: 146
+Registrar Abuse Contact Email: abuse@godaddy.com
+Registrar Abuse Contact Phone: +1.4806242505
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+Domain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited
+Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+Registry Registrant ID: Not Available From Registry
+Registrant Name: Registration Private
+Registrant Organization: Domains By Proxy, LLC
+Registrant Street: DomainsByProxy.com
+Registrant Street: 100 S. Mill Ave, Suite 1600
+Registrant City: Tempe
+Registrant State/Province: Arizona
+Registrant Postal Code: 85281
+Registrant Country: US
+Registrant Phone: +1.4806242599
+Registrant Phone Ext:
+Registrant Fax: 
+Registrant Fax Ext:
+Registrant Email: https://www.godaddy.com/whois/results.aspx?domain=bradescard-americanblackexclusivo.com&action=contactDomainOwner
+Name Server: NS63.DOMAINCONTROL.COM
+Name Server: NS64.DOMAINCONTROL.COM
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database: 2025-10-29T15:04:40Z <<<
+For more information on Whois status codes, please visit https://icann.org/epp
+
+TERMS OF USE: The data contained in this registrar's Whois database, while believed by the
+registrar to be reliable, is provided "as is" with no guarantee or warranties regarding its
+accuracy. This information is provided for the sole purpose of assisting you in obtaining
+information about domain name registration records. Any use of this data for any other purpose
+is expressly forbidden without the prior written permission of this registrar. By submitting
+an inquiry, you agree to these terms and limitations of warranty. In particular, you agree not
+to use this data to allow, enable, or otherwise support the dissemination or collection of this
+data, in part or in its entirety, for any purpose, such as transmission by e-mail, telephone,
+postal mail, facsimile or other means of mass unsolicited, commercial advertising or solicitations
+of any kind, including spam. You further agree not to use this data to enable high volume, automated
+or robotic electronic processes designed to collect or compile this data for any purpose, including
+mining this data for your own personal or commercial purposes. Failure to comply with these terms
+may result in termination of access to the Whois database. These terms may be subject to modification
+at any time without notice.
+
+**NOTICE** This WHOIS server is being retired. Please use our RDAP service instead.
+
+
+# 16- Rastreio de IP de site redirecionamento
+
+Após constatado o método do golpe, foi seguida a exploração da cadeia de infraestrutura do golpe, iniciando pela análise do IP do site em que o endereço incial redirecionava quando tentado ser acessado pela VM Linux, o `https://blog.veroo.com.br/giovani-e-adenir-oliveira-da-terra-ao-seu-paladar/`, com IP já informado r citado na análise do IP do site malicioso ``172.86.126.117``, sendo ele ``162.241.2.55``.
+Mais uma vez, utilizando o ``ip-analysis.py`` foram identificados os seguintes pontos de importância:
+
+**Análise de Comportamento**  
+| Evidência | Interpretação |
+|-----------|---------------|
+| **Tag “database”, “eol‑product”, “starttls”** (Shodan) | Indica que o host executa serviços de banco de dados (MySQL) e servidores de e‑mail que suportam STARTTLS, porém alguns destes produtos estão em fim de vida. |
+| **Serviços de e‑mail** (Exim 4.98.1 nas portas 26, 465, 587) | Versão vulnerável a uso‑after‑free (CVE‑2025‑30232) que pode permitir elevação de privilégio a usuários com acesso à linha de comando. |
+| **SSH 7.4** (portas 22 e 2222) | Várias CVEs críticas (ex.: CVE‑2025‑32728, CVE‑2025‑26465) que podem ser exploradas para bypass de autenticação ou ataque de Row‑Hammer. |
+| **Pure‑FTPd** (porta 21) | Serviço FTP aberto, sem indícios de restrição de acesso; possibilidade de login anônimo ou credenciais fracas. |
+| **cPanel/WHM** (portas 2082‑2087) | Interfaces de administração de hospedagem web (login “cPanel”) expostas ao público; alvo clássico de força‑bruta e exploração de vulnerabilidades de plugins. |
+| **MySQL 5.7.23** (porta 3306) | Versão ainda suportada, porém pode ser alvo de bruteforce se não estiver adequadamente protegida. |
+| **Múltiplos domínios phishing** (URLScan) | O IP serve como “forwarder” ou página de captura para domínios suspeitos (ex.: ``bradescard-americanblackexclusivo.com``, ``blackconviteplus.com``). Muitas dessas URLs apontam para o mesmo conteúdo de blog, sugerindo uso de *cloaking* ou *link‑bait*. |
+| **Certificados SSL** | Todos emitidos por **Sectigo** com validade de 1 ano (2025‑2026). Não há indícios de comprometimento na cadeia, mas a presença de HTTPS não impede abuso de conteúdo. |
+| **Abuse contacts** (ARIN) | EIG‑Abuse Mitigation (email ``IARPOC@Newfold.com``) e NOC da Unified Layer (email ``abuse@bluehost.com``). Estes contatos podem ser acionados para reporte de abuso. |
+
+**Padrão de uso**: o IP funciona como um *multi‑tenant* de hospedagem barata (possivelmente ambiente **cPanel/WHM** compartilhado). Atacantes aproveitam a baixa fricção de criação de contas para hospedar páginas de phishing ou redirecionamentos maliciosos, enquanto tiram proveito de serviços de gerenciamento (SSH, FTP) que permanecem abertos e desatualizados.
+
+A análise conclui que o servidor de uso do IP, possui inúmeros serviços ativos, com atenção especial para serviços de email, e banco de dados, além de, estar associado há outros inúmeros domínios utilizados para campanhas phishing, sugerindo ser centro de comando e controle das campanhas phishing.
+O uso de serviços legados, com várias vulnerabilidades conhecidas, demonstram possível falta de conhecimento em infraestrutura de segurança pelo grupo do golpe, embora, demonstrem uma arquitetura de design, hospedagem e direcionamento de sites sofitiscados.
+
+# 17- Análise de Domínios Suspeitos
+
+Após a análise automatizada, a busca manual pelo ``urlscan.io``, forneceu vários domínios suspeitos associados ao IP, associados aos seguintes IPs quando realizado ``nslookup`` e ``ping``:
+
+* ``centralregularize.com`` -> ``161.35.50.50``
+* ``blackconviteplus.com`` -> fora do ar
+* ``regularizandocpf.com`` -> ``216.238.109.50``
+* ``conviteblackelite.com`` -> ``191.252.227.30``
+* ``blackconviteexclusivo.com`` -> ``191.252.227.30``
+* ``blackconvitevip.com`` -> ``191.252.225.147``
+* ``rendaverificada.com`` -> ``216.238.109.50``
+* ``centralregularizacao.com`` -> ``191.252.225.147``
+* ``portalregularizacao.com`` -> ``216.238.109.50``
+* ``regularizesuadivida.com`` -> ``216.238.109.50``
+* ``www.legalizarcpfonline.com`` -> ``216.238.108.222``
+* ``simplificandoeorganizandosuasfinancaspessoais.store`` -> fora do ar
+* ``alertarct-431107602190.southamerica-east1.run.app`` -> ``34.143.7x.2``
+* ``regularize-709035289742.southamerica-east1.run.app`` -> ``34.143.7x.2``
+* ``nsm-709035289742.northamerica-south1.run.app`` -> ``34.143.7x.2``
+* ``segu-ran-ca-709035289742.southamerica-east1.run.app`` - > ``34.143.7x.2``
+
+```Bash
+┌──(kali㉿kali)-[~]
+└─$ nslookup centralregularize.com                            
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   centralregularize.com
+Address: 161.35.50.50
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup blackconviteplus.com 
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+** "server can't find blackconviteplus.com: NXDOMAIN"
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup regularizandocpf.com
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   regularizandocpf.com
+Address: 216.238.109.50
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup conviteblackelite.com
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   conviteblackelite.com
+Address: 191.252.227.30
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup blackconviteexclusivo.com                    
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   blackconviteexclusivo.com
+Address: 191.252.227.30
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup blackconvitevip.com      
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   blackconvitevip.com
+Address: 191.252.225.147
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup rendaverificada.com                   
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   rendaverificada.com
+Address: 216.238.109.50
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup centralregularizacao.com
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   centralregularizacao.com
+Address: 191.252.225.147
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup portalregularizacao.com
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   portalregularizacao.com
+Address: 216.238.109.50
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup regularizesuadivida.com
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   regularizesuadivida.com
+Address: 216.238.109.50
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup legalizarcpfonline.com 
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   legalizarcpfonline.com
+Address: 216.238.108.222
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup simplificandoeorganizandosuasfinancaspessoais.store
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+** "server can't find simplificandoeorganizandosuasfinancaspessoais.store: NXDOMAIN"
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup regularize-709035289742.southamerica-east1.run.app 
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+regularize-709035289742.southamerica-east1.run.app      canonical name = v2.run.app.
+Name:   v2.run.app
+Address: 34.143.76.2
+Name:   v2.run.app
+Address: 34.143.77.2
+Name:   v2.run.app
+Address: 34.143.73.2
+Name:   v2.run.app
+Address: 34.143.78.2
+Name:   v2.run.app
+Address: 34.143.79.2
+Name:   v2.run.app
+Address: 34.143.75.2
+Name:   v2.run.app
+Address: 34.143.72.2
+Name:   v2.run.app
+Address: 34.143.74.2
+Name:   v2.run.app
+Address: 2600:1900:4244:200::
+Name:   v2.run.app
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup alertarct-431107602190.southamerica-east1.run.app 
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+alertarct-431107602190.southamerica-east1.run.app       canonical name = v2.run.app.
+Name:   v2.run.app
+Address: 34.143.73.2
+Name:   v2.run.app
+Address: 34.143.78.2
+Name:   v2.run.app
+Address: 34.143.79.2
+Name:   v2.run.app
+Address: 34.143.74.2
+Name:   v2.run.app
+Address: 34.143.75.2
+Name:   v2.run.app
+Address: 34.143.72.2
+Name:   v2.run.app
+Address: 34.143.77.2
+Name:   v2.run.app
+Address: 34.143.76.2
+                                                                     
+┌──(kali㉿kali)-[~]
+└─$ nslookup nsm-709035289742.northamerica-south1.run.app     
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+nsm-709035289742.northamerica-south1.run.app    canonical name = v2.run.app.
+Name:   v2.run.app
+Address: 34.143.73.2
+Name:   v2.run.app
+Address: 34.143.74.2
+Name:   v2.run.app
+Address: 34.143.79.2
+Name:   v2.run.app
+Address: 34.143.77.2
+Name:   v2.run.app
+Address: 34.143.72.2
+Name:   v2.run.app
+Address: 34.143.76.2
+Name:   v2.run.app
+Address: 34.143.78.2
+Name:   v2.run.app
+Address: 34.143.75.2
+
+                                                                                                                                                                          
+┌──(kali㉿kali)-[~]
+└─$ nslookup segu-ran-ca-709035289742.southamerica-east1.run.app
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+segu-ran-ca-709035289742.southamerica-east1.run.app     canonical name = v2.run.app.
+Name:   v2.run.app
+Address: 34.143.73.2
+Name:   v2.run.app
+Address: 34.143.78.2
+Name:   v2.run.app
+Address: 34.143.75.2
+Name:   v2.run.app
+Address: 34.143.76.2
+Name:   v2.run.app
+Address: 34.143.72.2
+Name:   v2.run.app
+Address: 34.143.77.2
+Name:   v2.run.app
+Address: 34.143.79.2
+Name:   v2.run.app
+Address: 34.143.74.2
+Name:   v2.run.app
+Address: 2600:1900:4242:200::
+Name:   v2.run.app
+Address: 2600:1901:81d4:200::
+Name:   v2.run.app
+Address: 2600:1900:4241:200::
+Name:   v2.run.app
+Address: 2600:1900:4245:200::
+Name:   v2.run.app
+Address: 2600:1900:4240:200::
+Name:   v2.run.app
+Address: 2600:1900:4243:200::
+Name:   v2.run.app
+Address: 2600:1901:81d5:200::
+Name:   v2.run.app
+Address: 2600:1900:4244:200::
+```
+
+Em resumo, os IPs associados aos domínios suspeitos foram:
+* ``161.35.50.50`` 
+* ``216.238.109.50`` 
+* ``191.252.227.30`` 
+* ``191.252.225.147`` 
+* ``216.238.108.222`` 
+* ``34.143.7x.2``
+
+O IP ``34.143.7x.2`` já analisado anteriormente, fazendo parte do bloco de IPs de serviço da Google Cloud, evidenciando apresença de vários serviços hispedados e ativos por essa via de hospedagem e distribuição.
+A análise revelou também, o uso de mesmo IP para vários domínios diferentes, além de todos, não passarem de 5 meses de registro segundo o ``urlscan.io``. 
+
+# 18- Análise de IPs encontrados
+
+A análise dos IPs, foi realizada de forma automatizada pelo ``ip-analysis.py``.
+
+## ``161.35.50.50`` 
+
+**Análise de Comportamento**
+| Fonte | Evidência | Interpretação |
+|-------|-----------|---------------|
+| **Shodan – Tags** | `cloud` | Indica que o host está em infraestrutura de nuvem (DigitalOcean). |
+| **Shodan – Última vez visto** | 2025‑10‑27 | O host está ativo recentemente. |
+| **Portas abertas** | 22, 80, 443 | Serviços SSH e Web (HTTP/HTTPS) expostos ao público. |
+| **Banner SSH** | OpenSSH 9.6p1 (Ubuntu) | Versão atual, sem vulnerabilidades conhecidas críticas. |
+| **Banner HTTP** | Apache 2.4.58 (Ubuntu) | Versão antiga, com várias CVEs (lista abaixo). |
+| **Domínio / Hostname** | convitecenturion.com – blog de cafés | Uso aparente como site institucional/pessoal, sem indício direto de atividade maliciosa. |
+| **URLScan.io** | Nenhum resultado | Não há evidência de interações suspeitas capturadas por URLScan. |
+| **Abuse contacts** (ARIN) | abuse@digitalocean.com | Canal oficial de relato de abuso disponível. |
+
+**Conclusão comportamental:**  
+- Não há sinais explícitos de que o IP esteja operando como **C2**, **botnet**, ou **scanner de rede**.  
+- O risco principal decorre da **exposição pública de serviços** (SSH, HTTP/HTTPS) e da **presença de múltiplas vulnerabilidades** no servidor Apache, que podem ser exploradas por atores maliciosos para comprometimento do host ou para usá‑lo como **ponto de apoio** em campanhas de ataque.
+O endereço **161.35.50.50** pertence à DigitalOcean (ASN **AS14061**) e está localizado em **North Bergen, New Jersey, EUA**. O host resolve para ``convitecenturion.com``, um site de blog que utiliza **Apache httpd 2.4.58** (Ubuntu) nas portas **80 (HTTP)** e **443 (HTTPS)**, além de **OpenSSH 9.6p1** na porta **22 (SSH)**. O serviço web apresenta mais de **30 CVEs** associados à versão do Apache, incluindo vulnerabilidades críticas (CVSS ≥ 9). Não há indicadores claros de que o IP faça parte de botnets ou de atividades de scanner; entretanto, a presença de um servidor exposto com várias vulnerabilidades pode torná‑lo um alvo atraente para exploração ou para uso como ponto de pivotagem.  
+
+A análise, embora não tenha observado comportamentos maliciosos, possui serviços ativos de ``SSH`` e ``HTTP/HTTPS``, o que sugere seu uso para hospedagem de páginas somente, e possivelmente, pelos serviços ativos, ponto de apoio para realização de atividades ofensivas contra as vítimas através .
+O IP direciona para o domínio ``convitecenturion.com``, sendo um domínio com página confiável, porém, que aponta para outro IP ao ser analisado pelo ``nslookup``, evidenciamento mais um sistema de direcionamento e ``cloacking``, demonstrando o comportamento malicioso, e mais uma vez, a arquitetura sofisticada das campanhas phishing realizadas pelo grupo de golpistas.
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ nslookup convitecenturion.com
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   convitecenturion.com
+Address: 172.233.6.193
+```
+
+## ``216.238.109.50``
+
+**Análise de Comportamento**
+| Indicador | Evidência | Interpretação |
+|-----------|-----------|---------------|
+| **Tags Shodan** | `cloud`, `vpn` | Hospedado em nuvem e oferece serviço VPN – uso legítimo ou para mascaramento de atividades maliciosas. |
+| **Porta 500/UDP (IKE VPN)** | Payload IKE exibido, sem criptografia | Indica um serviço de VPN ativo, possivelmente usado para **túnel de tráfego malicioso** ou para ocultar a origem de ataques. |
+| **Porta 22/SSH aberta** | OpenSSH 7.6p1, banner público | Facilidade de acesso remoto; pode ser alvo de **brute‑force** ou já estar comprometido como ponto de comando e controle (C2). |
+| **Portas 80/443 HTTP(S)** | Resposta 404 em 80; HTTPS ativo nos domínios investigados | Hospedagem de múltiplos sites de aparência fraudulenta (phishing/ scams). |
+| **Domínios de curto prazo** | Idade entre 0‑14 dias, conteúdo de “regularização” de documentos | Estratégia típica de **phishing**: registrar rapidamente domínios, usar certificados válidos (TLS 89 dias) para ganhar confiança. |
+| **Ausência de CVEs listadas** | Shodan não mostrou vulnerabilidades específicas | Não há vulnerabilidades expostas diretamente, mas o software (OpenSSH 7.6p1) tem CVEs conhecidos (ex.: CVE‑2018‑15473, CVE‑2020‑15778). |
+| **Presença em feeds de ameaças** | Não fornecido, porém tags e comportamento sugerem inclusão em listas de **abuse** de nuvem. | Recomenda‑se verificação em fontes externas (AbuseIPDB, Spamhaus, etc.). |
+
+**Conclusão comportamental:** O IP funciona como **infraestrutura de hospedagem de sites fraudulentos** e oferece serviços VPN/SSH que podem ser utilizados para **túnel e controle remoto**. Não há evidência direta de ser parte de um botnet conhecido, mas o conjunto de serviços e a natureza dos domínios apontam para uso malicioso.
+O endereço **216.238.109.50** pertence à nuvem da **Vultr** (ASN AS20473 – The Constant Company, LLC) e está localizado em **Osasco, São Paulo, Brasil**. O host apresenta as portas **22 (SSH), 80 (HTTP), 443 (HTTPS), 500 (UDP – IKE VPN) e 7011 (TCP – serviço não identificado)**. Os banners revelam um servidor **OpenSSH 7.6p1** e um túnel VPN IKE ativo.  
+Diversos domínios de **curto tempo de vida** (ex.: `regularizandocpf.com`, `rendaverificada.com`, `centralregularizacao.com`) apontam para este IP, todos exibindo páginas em português com aparência de sites de “regularização” de CPF, renda, etc., tipicamente associadas a **phishing e fraudes financeiras**. As tags do Shodan (“cloud”, “vpn”) reforçam a natureza de hospedeiro de serviços VPN e web. Não foram encontradas vulnerabilidades CVE explícitas no relatório, porém o OpenSSH 7.6p1 possui vulnerabilidades conhecidas.
+
+A análise, revela ser um IP de servidor reconhecido para atividades maliciosas, podendo ser usado como ponto de comando e controle por coleta de tráfego via túnel VPN, presente como serviço ativo no servidor. A análise também evidenciou a presença de uma porta alta aberta ``7011``, desmonstrando comportamento suspeito de execução de serviços de comunicação com máquinas das vítimas.  
+
+## ``191.252.227.30``
+
+**Análise de Comportamento**
+| Fonte | Evidência | Interpretação |
+|-------|-----------|----------------|
+| **Shodan** | Página de erro “404: Not Found” – nenhuma ficha de serviço. | O Scanning do Shodan não obteve banners; porém a ausência de dados não indica inexistência de serviços. |
+| **URLScan.io** | 5 varreduras mostrando 5 domínios diferentes (ex.: `blackconviteplus.com`, `conviteblackelite.com`, `blackconviteexclusivo.com`). Todos apontam ao mesmo IP, com certificado TLS recém‑emitido (≈ 90 dias) e content‑type HTML. | Indica que o IP hospeda múltiplos domínios de curta vida – padrão de “fast‑flux” ou serviços de hospedagem de páginas de phishing/ scams. |
+| **Domínios** | Todos os domínios apresentam **título** “Giovani e Adenir Oliveira: da terra ao seu paladar — Blog Veroo Cafés”. | Pode ser tentativa de camuflagem usando conteúdo aparentemente legítimo, mas a correlação com termos “convite”, “black” sugere campanha de engodo. |
+| **Serviços detectados** | Servidor Apache 2.4.52 (Ubuntu) nas portas 80/443. | Servidor web padrão, mas a versão Apache 2.4.52 já tem vulnerabilidades conhecidas; embora não haja CVEs listados pelo Shodan, a presença de um software amplo pode facilitar exploração. |
+| **Certificado TLS** | Emissor “R13”, validade 89‑90 dias, emitido recentemente (03‑10‑2025). | Certificado provavelmente de Let's Encrypt (R13 = “R3”?), típico de automação de certificados em ambientes de hospedagem rápida. |
+| **ASN / ISP** | AS27715 – Locaweb Serviços de Internet S/A. | Provedor de hospedagem brasileiro de uso geral; a presença de atividades suspeitas pode estar relacionada a clientes mal‑intencionados ou a comprometimento de um servidor dentro da rede. |
+
+**Conclusão comportamental:** Não há evidência direta de botnet de C2, mas o padrão de múltiplos domínios curtos, conteúdos de blog genéricos e uso de TLS recente são indicadores típicos de infraestrutura de phishing/ scam. O IP pode estar sendo usado como *phishing landing page* ou para hospedar *malvertising*.
+O endereço **191.252.227.30** pertence à Locaweb Serviços de Internet S/A (AS27715) e está localizado em São Paulo, BR. Embora o Shodan não retorne informações de serviços (apresenta “404: Not Found”), o URLScan.io identifica este IP como backend de múltiplos domínios recém‑criados (e com idade de 0 dias) que exibem o mesmo site de aparência legítima (blog “Veroo Cafés”), porém os nomes (ex.: *blackconviteplus.com*, *conviteblackelite.com*, *blackconviteexclusivo.com*) são típicos de campanhas de phishing ou de “convite” fraudulento. O servidor responde nas portas **80 / 443** (Apache 2.4.52 em Ubuntu) e utiliza certificado TLS válido (≈ 90 dias). Não foram encontrados CVEs associados ao host via Shodan. O conjunto de indicadores sugere possível uso do IP para hospedagem de sites de engodo ou de phishing, possivelmente como parte de botnet de hospedagem de conteúdo malicioso.
+
+Análise retornou de forma clara, mais um IP de servidor de sites maliciosos, sem retorno de serviços por estar inacessível pelo scan do ``shodan.io``, o que demonstra, ser somente utilizado para hospedagem de páginas pelo ``Localweb``.
+
+## ``191.252.225.147``
+
+Análise de Comportamento
+| Evidência | Interpretação |
+|-----------|----------------|
+| **Múltiplas hostnames** (`batamwebmedia.com`, `vpscl3417.publiccloud.com.br`) e **diversas zonas** (`centralregularize.com`, `blackconvitevip.com`, `conviteblackvip.com`, `conviteblackexclusivo.com`) apontando para o mesmo IP | **Fast‑flux / painel de controle de hospedagem** que permite a criação rápida de domínios de phishing ou spam. |
+| **Domínios com “age” de 0‑1 dia** (URLScan.io) e **tags “suspect”** | Probabilidade alta de **campanhas de phishing, scams ou sites de afiliados maliciosos**. |
+| **Porta 25 aberta com STARTTLS** e **banner Postfix** sem restrição explícita de relay | Possível **relay de spam** ou **uso como ponto de saída para botnet**. |
+| **Porta 22 aberta** (OpenSSH) | Vetor comum para **ataques de força‑bruta / comprometimento de credenciais**. |
+| **Apache 2.4.52** com inúmeras CVEs (vários críticos, high e medium) | **Superfície de ataque extensa**; vulnerabilidades conhecidas podem ser exploradas para RCE, SSRF, hijacking de sessão ou negação de serviço. |
+| **Certificado Let's Encrypt válido 89 dias** (para `batamwebmedia.com`) e **certificado self‑signed** no banner SMTP | Indica **configurações mistas** que podem ser usadas para mascarar tráfego malicioso. |
+| **Tags Shodan – “self‑signed”, “starttls”** | Sinal de **serviços mal configurados** (pode facilitar interceptação ou spoofing). |
+| **Último visto 2025‑10‑08** (atividade recente) | O host está **ativo e em operação** no momento da coleta. |
+
+**Conclusão comportamental:**  
+O IP demonstra um perfil típico de **infraestrutura de hospedagem utilizada por atores maliciosos** para distribuir sites de curta vida, possibilitar envio de e‑mail em massa e servir como ponto de acesso para exploração de vulnerabilidades web.
+O endereço **191.252.225.147** está alocado à **Locaweb Serviços de Internet S/A (AS27715)**, localizado em **São Paulo – Brasil**. O host apresenta as portas **22 (SSH), 25 (SMTP), 80 (HTTP) e 443 (HTTPS)** expostas, rodando **OpenSSH 8.9p1 (Ubuntu)**, **Postfix smtpd** e **Apache httpd 2.4.52 (Ubuntu)**.  
+Várias domíções recém‑criadas (ex.: `centralregularize.com`, `blackconvitevip.com`, `conviteblackvip.com`) apontam para esse IP, todas exibindo um mesmo conteúdo de blog (potencialmente usado como fachada).  
+O serviço Apache contém **mais de 30 vulnerabilidades** (incluindo CVEs críticos como CVE‑2024‑38476 – CVSS 9.8) e a configuração de SMTP permite STARTTLS, mas não há evidência de restrição de relay.  
+Indicadores de uso malicioso: domínio de vida útil ≤ 1 dia, múltiplos domínios “suspect”, serviços de mail abertos e presença de tags **self‑signed** e **starttls** no Shodan.  
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ nslookup batamwebmedia.com       
+Server:         192.168.192.2
+Address:        192.168.192.2#53
+
+Non-authoritative answer:
+Name:   batamwebmedia.com
+Address: 191.252.225.147
+```
+
+Análise retornou de forma clara, mais um IP de servidor de sites maliciosos, com serviço ``SMTP`` com ``STARTTLS``, sugerindo aervidor de ``botnets`` de envio de emails phishing.
+A análise, retornou também, uso de certificado para domínio ``batamwebmedia.com`` no banner do serviço ``SMTP``, confirmando sua correspondência através de ``nslookup``. 
+Uma rápida análise via ``whois.com``, apontou para o registro do domínio pelo ``Hostinger``, com dados de contato do proprietário ocultados, sendo exibidos o do servidor da hospedagem do domínio (``Hostinger``). O uso desse domínio, sugere possível uso para mascarar o tráfego, podendo esse, estar sendo utilizado por possível má configuração de DKIM/DMARK/SPF.
+
+## ``216.238.108.222``
+
+Análise de Comportamento
+| Fonte | Indicador | Interpretação |
+|-------|-----------|---------------|
+| **Shodan** | Tags: `cloud`, hostnames `*.vultrusercontent.com` | Servidor em nuvem pública, tipicamente usado por infraestruturas legítimas, mas também por atores maliciosos que buscam anonimato rápido. |
+| **Shodan – Portas** | 443 (HTTPS) & 8082 (HTTP) – ambos Nginx | Serviços web abertos. 8082 responde com *400 Bad Request* ao HTTP puro, possivelmente um endpoint de API ou painel interno exposto. |
+| **URLScan.io** | 5 domínios analisados apontam ao mesmo IP, todos marcados como “suspect”. Títulos falsificam autoridades brasileiras (DETRAN, Receita Federal). | Indicação clara de **phishing** e **fraude online**. O IP age como hospedagem de landing pages enganosas. |
+| **Whois / RDAP** | Organização: *Vultr Holdings, LLC* (provedor de cloud). | Não há vínculo direto com atividade criminosa, porém a natureza de VPS permite rotatividade e uso temporário por atores maliciosos. |
+| **Histórico de varredura** | Último visto em 2025‑10‑09 | O IP está ativo recentemente, mantendo os serviços expostos. |
+
+**Conclusão de comportamento:** Não há sinais de botnet ou C2 (não foram observados tráfego de comando/controle ou portas típicas de P2P). Contudo, a **presença de múltiplos sites fraudulentos** indica que o servidor está sendo usado como **plataforma de hospedagem de phishing** e possivelmente distribuição de payloads maliciosos via download de arquivos ou scripts maliciosos.
+O endereço **216.238.108.222** está localizado em **Osasco, São Paulo, Brasil**, pertencente ao provedor de nuvem **Vultr** (ASN **AS20473 – The Constant Company, LLC**). O host possui duas portas abertas (**443/tcp** e **8082/tcp**) servindo **Nginx**. Evidências de **atividade maliciosa** foram encontradas nas análises de URLScan.io, que mostram o IP sendo utilizado como backend de múltiplos domínios suspeitos de phishing e fraude (ex.: *regularizemultas.com*, *legalizarcpfonline.com*), todos com conteúdo falsificando órgãos públicos (DETRAN, Receita Federal). Não foram identificadas vulnerabilidades CVE diretamente associadas ao serviço Nginx exposto, mas a presença de um servidor web público sem restrições e seu uso para hospedagem de sites fraudulentos indica **alto risco de ser usado como vetor de ataque** (phishing, distribuição de malware, hospedagem de payloads).
+
+A análise, evidenciando mais um IP direcionado à servidor de hospedagem de sites com serviços ``HTTP``, ``HTTPS`` e outros servidos via ``Nginx`` nas portas ``443`` e ``8082``, de múltiplos domínios analisados apontados ao mesmo IP, todos marcados como “suspect”, com títulos de falsificação autoridades brasileiras (DETRAN, Receita Federal), indicando também, servir de servidor para ``landing pages`` maliciosas.
 
 
 

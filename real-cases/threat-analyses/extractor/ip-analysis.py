@@ -1,12 +1,9 @@
-from shodan import Shodan, APIError
 from ollama import Client
 import requests
 import sys
 import json
 
 client=Client()
-
-api_shodan = Shodan("k6RgThpf7oJymLKLCGLiEK4l78IZvd6I")
 
 ip = '172.237.50.16'
 
