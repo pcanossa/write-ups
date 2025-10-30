@@ -637,10 +637,10 @@ O uso de serviços legados, com várias vulnerabilidades conhecidas, demonstram 
 
 # 17- Análise de Domínios Suspeitos
 
-Após a análise automatizada, a busca manual pelo ``urlscan.io``, forneceu vários domínios suspeitos associados ao IP, associados aos seguintes IPs quando realizado ``nslookup`` e ``ping``:
+Após a análise automatizada, a busca manual pelo ``urlscan.io``, forneceu vários domínios suspeitos associados ao IP, associados aos seguintes IPs quando realizado ``nslookup``:
 
 * ``centralregularize.com`` -> ``161.35.50.50``
-* ``blackconviteplus.com`` -> fora do ar
+* ``blackconviteplus.com`` -> ``191.252.227.30``
 * ``regularizandocpf.com`` -> ``216.238.109.50``
 * ``conviteblackelite.com`` -> ``191.252.227.30``
 * ``blackconviteexclusivo.com`` -> ``191.252.227.30``

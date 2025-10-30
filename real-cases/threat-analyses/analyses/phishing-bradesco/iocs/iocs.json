@@ -1,164 +1,205 @@
 {
-  "threat_report": {
-    "title": "Campanha de Phishing Bradesco / American Express",
+  "analysis_metadata": {
     "analyst": "Patrícia Canossa Gagliardi",
-    "date": "2025-10-27",
-    "summary": "Campanha de phishing bancário com uso de infraestrutura em nuvem (Google Cloud, RouterHosting, Linode/Akamai) para redirecionamento, mascaramento e exfiltração de credenciais financeiras via scripts JavaScript e API PHP.",
-    "iocs": [
+    "analysis_date": "2025-10-27",
+    "campaign_name": "Phishing Bradesco / American Express",
+    "tlp": "AMBER"
+  },
+  "primary_artifacts": [
+    {
+      "type": "domain",
+      "value": "bradescard-americanblackexclusivo.com",
+      "description": "Domínio principal da página de phishing.",
+      "status": "malicious",
+      "associated_ips": [
+        "172.86.126.117",
+        "172.237.50.16",
+        "162.241.2.55"
+      ],
+      "registrar": "GoDaddy.com, LLC",
+      "nameservers": [
+        "NS63.DOMAINCONTROL.COM",
+        "NS64.DOMAINCONTROL.COM"
+      ]
+    }
+  ],
+  "infrastructure_indicators": {
+    "cloaking_and_c2_ips": [
       {
-        "type": "domain",
-        "value": "redexclusiv-975736767249.southamerica-east1.run.app",
-        "description": "Link inicial de phishing hospedado na Google Cloud Run",
-        "risk_level": "medium",
-        "notes": "Possui cloaking por sistema operacional; bloqueia acessos Linux"
+        "ip": "216.238.109.50",
+        "provider": "Vultr",
+        "description": "Provável Centro de Comando e Controle (C2). Oferece serviço de VPN (Porta 500/UDP) e hospeda múltiplos domínios de phishing."
       },
       {
-        "type": "ip",
-        "value": "34.143.78.2",
-        "description": "IP resolvido do domínio inicial (Google Cloud)",
-        "risk_level": "low",
-        "notes": "Infraestrutura legítima, mas usada indevidamente"
+        "ip": "191.252.225.147",
+        "provider": "Locaweb",
+        "description": "Provável servidor de Botnet/Spam. Porta 25 (SMTP) com STARTTLS ativa. Associado ao domínio 'batamwebmedia.com'."
       },
       {
-        "type": "domain",
-        "value": "bradescard-americanblackexclusivo.com",
-        "description": "Domínio fraudulento principal da campanha",
-        "risk_level": "critical",
-        "notes": "Listada em PhishTank; forte indício de brandjacking"
-      },
-      {
-        "type": "ip",
-        "value": "172.86.126.117",
-        "description": "IP inicial vinculado ao domínio de phishing",
-        "risk_level": "critical",
-        "notes": "Hospedado em RouterHosting LLC; Apache 2.4.41 vulnerável e SSH 8.2p1 aberto"
-      },
-      {
-        "type": "ip",
-        "value": "172.237.50.16",
-        "description": "Novo IP usado pelo domínio após migração",
-        "risk_level": "medium",
-        "notes": "Infraestrutura Linode/Akamai; evasão de detecção"
-      },
-      {
-        "type": "ip",
-        "value": "162.241.2.55",
-        "description": "Resolução posterior do domínio fraudulento",
-        "risk_level": "medium",
-        "notes": "Provável transição DNS"
-      },
-      {
-        "type": "ip",
-        "value": "88.221.161.37",
-        "description": "IP referenciado no código HTML do site falso",
-        "risk_level": "low",
-        "notes": "CDN da Akamai; sem atividade maliciosa confirmada"
-      },
-      {
-        "type": "javascript",
-        "value": "/js/navegg.js",
-        "description": "Coleta de dados via plataforma Navegg",
-        "risk_level": "medium",
-        "notes": "Uso de tracking legítimo reaproveitado para perfis de vítima"
-      },
-      {
-        "type": "javascript",
-        "value": "/js/lembrarAgCta.js",
-        "description": "Armazena dados bancários em cookie Base64",
-        "risk_level": "critical",
-        "notes": "Roubo de credenciais de agência e conta"
-      },
-      {
-        "type": "javascript",
-        "value": "/js/fbevents.js",
-        "description": "Script oficial do Meta Pixel",
-        "risk_level": "low",
-        "notes": "Usado para tracking ou retargeting"
-      },
-      {
-        "type": "javascript",
-        "value": "/js/validaFormNaoCorrentista.js",
-        "description": "Valida CPF e envia para endpoint remoto",
-        "risk_level": "critical",
-        "notes": "Roubo de CPF e dados pessoais"
-      },
-      {
-        "type": "javascript",
-        "value": "/js/detect-mobile.js",
-        "description": "Detecta OS móvel e redireciona links",
-        "risk_level": "high",
-        "notes": "Redireciona para apps falsos ou deep links maliciosos"
-      },
-      {
-        "type": "javascript",
-        "value": "/js/one-tag.js",
-        "description": "Intercepta cliques e envia credenciais bancárias",
-        "risk_level": "critical",
-        "notes": "Exfiltra dados para thunderhead.com via siteKey=ONE-WDA4KRKODB-1484"
-      },
-      {
-        "type": "domain",
-        "value": "thunderhead.com",
-        "description": "CDN usada por one-tag.js",
-        "risk_level": "medium",
-        "notes": "Infraestrutura legítima (Cloudflare) usada como proxy"
-      },
-      {
-        "type": "ip",
-        "value": "141.193.213.20",
-        "description": "IP da thunderhead.com (Cloudflare)",
-        "risk_level": "low",
-        "notes": "CDN legítima; sem comprometimento"
-      },
-      {
-        "type": "ip",
-        "value": "141.193.213.21",
-        "description": "IP da thunderhead.com (Cloudflare)",
-        "risk_level": "low",
-        "notes": "CDN legítima; sem comprometimento"
-      },
-      {
-        "type": "javascript",
-        "value": "/js/index.js",
-        "description": "Captura dados bancários do login (agência, conta, dígito)",
-        "risk_level": "critical",
-        "notes": "Manipula e envia dados para o servidor malicioso"
-      },
-      {
-        "type": "javascript",
-        "value": "/js/identificacao.js",
-        "description": "Controla teclado virtual e exfiltra senha de 4 dígitos",
-        "risk_level": "critical",
-        "notes": "Comunicação constante com api.php"
-      },
-      {
-        "type": "php",
-        "value": "/api.php",
-        "description": "Endpoint de comando e controle (C2)",
-        "risk_level": "critical",
-        "notes": "Recebe dados capturados das vítimas"
-      },
-      {
-        "type": "php",
-        "value": "/identificacao.php",
-        "description": "Página de login falso com teclado virtual",
-        "risk_level": "critical",
-        "notes": "Imita página legítima do Bradesco"
-      },
-      {
-        "type": "url",
-        "value": "https://blog.veroo.com.br/giovani-e-adenir-oliveira-da-terra-ao-seu-paladar/",
-        "description": "Página legítima usada como redirecionamento (decoy)",
-        "risk_level": "low",
-        "notes": "Usada para mascarar o tráfego"
+        "ip": "162.241.2.55",
+        "provider": "Unified Layer / Bluehost",
+        "description": "Servidor de redirecionamento (cloaking) e hospedagem CPanel. Associado a múltiplos domínios de phishing e ao site 'blog.veroo.com.br'."
       }
     ],
-    "mitre_attack": [
-      "T1566.002 - Phishing: Link Malicioso",
-      "T1056.001 - Input Capture (Web Form)",
-      "T1071.001 - Application Layer Protocol (HTTP/S)",
-      "T1036 - Masquerading",
-      "T1568.002 - Dynamic Resolution (DNS)"
+    "phishing_hosting_ips": [
+      {
+        "ip": "172.86.126.117",
+        "provider": "RouterHosting LLC",
+        "description": "Hospedagem inicial do phishing. Associado ao PhishTank."
+      },
+      {
+        "ip": "172.237.50.16",
+        "provider": "Linode/Akamai",
+        "description": "Hospedagem secundária do phishing (infraestrutura mais limpa)."
+      },
+      {
+        "ip": "191.252.227.30",
+        "provider": "Locaweb",
+        "description": "Servidor web para múltiplos domínios de phishing."
+      },
+      {
+        "ip": "216.238.108.222",
+        "provider": "Vultr",
+        "description": "Servidor web para landing pages falsas (DETRAN, Receita Federal)."
+      },
+      {
+        "ip": "161.35.50.50",
+        "provider": "DigitalOcean",
+        "description": "Servidor web associado a domínios de phishing."
+      }
+    ],
+    "google_cloud_run_domains": [
+      {
+        "domain": "redexclusiv-975736767249.southamerica-east1.run.app",
+        "description": "URL inicial no email (Google Cloud Run) usada para cloaking.",
+        "associated_ip_pool": "34.143.7x.2"
+      },
+      {
+        "domain": "alertarct-431107602190.southamerica-east1.run.app",
+        "description": "Infraestrutura Google Cloud Run associada.",
+        "associated_ip_pool": "34.143.7x.2"
+      },
+      {
+        "domain": "regularize-709035289742.southamerica-east1.run.app",
+        "description": "Infraestrutura Google Cloud Run associada.",
+        "associated_ip_pool": "34.143.7x.2"
+      },
+      {
+        "domain": "nsm-709035289742.northamerica-south1.run.app",
+        "description": "Infraestrutura Google Cloud Run associada.",
+        "associated_ip_pool": "34.143.7x.2"
+      },
+      {
+        "domain": "segu-ran-ca-709035289742.southamerica-east1.run.app",
+        "description": "Infraestrutura Google Cloud Run associada.",
+        "associated_ip_pool": "34.143.7x.2"
+      }
+    ],
+    "associated_malicious_domains": [
+      {
+        "domain": "regularizandocpf.com",
+        "status": "malicious"
+      },
+      {
+        "domain": "blackconvitevip.com",
+        "status": "malicious"
+      },
+      {
+        "domain": "centralregularize.com",
+        "status": "suspect"
+      },
+      {
+        "domain": "blackconviteplus.com",
+        "status": "suspect"
+      },
+      {
+        "domain": "conviteblackelite.com",
+        "status": "suspect"
+      },
+      {
+        "domain": "blackconviteexclusivo.com",
+        "status": "suspect"
+      },
+      {
+        "domain": "rendaverificada.com",
+        "status": "suspect"
+      },
+      {
+        "domain": "centralregularizacao.com",
+        "status": "suspect"
+      },
+      {
+        "domain": "portalregularizacao.com",
+        "status": "suspect"
+      },
+      {
+        "domain": "regularizesuadivida.com",
+        "status": "suspect"
+      },
+      {
+        "domain": "legalizarcpfonline.com",
+        "status": "suspect"
+      },
+      {
+        "domain": "convitecenturion.com",
+        "status": "suspect"
+      },
+      {
+        "domain": "batamwebmedia.com",
+        "status": "suspect"
+      }
     ]
-  }
+  },
+  "file_and_url_indicators": [
+    {
+      "type": "url",
+      "value": "https://bradescard-americanblackexclusivo.com/api.php",
+      "description": "Endpoint de exfiltração de dados (server-side)."
+    },
+    {
+      "type": "url",
+      "value": "https://bradescard-americanblackexclusivo.com/js/identificacao.js",
+      "description": "Script que captura senha do teclado virtual e envia para api.php."
+    },
+    {
+      "type": "url",
+      "value": "https://bradescard-americanblackexclusivo.com/js/one-tag.js",
+      "description": "Script que coleta agência/conta. Faz chamada para 'ns5.cdn.thunderhead.com'."
+    },
+    {
+      "type": "url",
+      "value": "https://bradescard-americanblackexclusivo.com/js/validaFormNaoCorrentista.js",
+      "description": "Script que coleta e exfiltra CPF."
+    },
+    {
+      "type": "url",
+      "value": "https://bradescard-americanblackexclusivo.com/js/lembrarAgCta.js",
+      "description": "Script que armazena credenciais em cookies via Base64."
+    },
+    {
+      "type": "url",
+      "value": "https://bradescard-americanblackexclusivo.com/indetificacao.php",
+      "description": "Página do teclado virtual para roubo da senha de 4 dígitos."
+    },
+    {
+      "type": "url",
+      "value": "https://www.bradescocelular.com.br/app_redirect/...",
+      "description": "URL de redirecionamento para usuários mobile, usada pelo 'detect-mobile.js'."
+    }
+  ],
+  "other_references": [
+    {
+      "type": "PhishTank_ID",
+      "value": "0199c5d6"
+    },
+    {
+      "type": "PhishTank_ID",
+      "value": "0199be39"
+    },
+    {
+      "type": "hardcoded_ip",
+      "value": "88.221.161.37",
+      "description": "IP da Akamai encontrado no código HTML. Análise não indicou malícia, mas é um artefato."
+    }
+  ]
 }

@@ -5,7 +5,9 @@ import json
 
 client=Client()
 
-domain_name = 'centralregularize.com' # Insira o Domínio a ser analisado aqui
+domain_name = 'legalizarcpfonline.com' # domínio para análise
+
+vt_api_key='' # chave de API do Virus Total
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
@@ -15,9 +17,7 @@ headers = {
     'DNT': '1',
 }
 
-virustotal_api_key = '' #Adicione sua chave de API do VirusTotal aqui
-
-print(f"Coletando informações para o IP: {domain_name}...")
+print(f"Coletando informações para o domínio: {domain_name}...")
 
 sanitized_domain = domain_name.replace('.', '_')
 report_filename = f"threat_report_{sanitized_domain}.md"
@@ -34,7 +34,7 @@ try:
 
     # 3. Análise do Virus Total
     vt_details_response = requests.get(f'https://www.virustotal.com/api/v3/domains/{domain_name}', headers={
-        'x-apikey': {virustotal_api_key},
+        'x-apikey': {vt_api_key},
         'accept': 'application/json'
     })
     vt_details_response.raise_for_status()
@@ -69,7 +69,7 @@ Você é um especialista em Threat Intelligence. Analise os dados brutos forneci
 
 **Seu relatório deve conter:**
 1.  **Resumo Executivo:** Um parágrafo conciso com as principais descobertas (localização, ISP, comportamento suspeito, domínios e IPs suspeitos relacionados, registros de malignidade).
-2.  **Análise de Comportamento:** Avalie se há indícios de atividade maliciosa, como associação com botnets, scanners, ou servidores de C2, malware com base nos dados do Vírus Total e outras fontes.
+2.  **Análise de Comportamento:** Avalie se há indícios de atividade maliciosa, como associação com botnets, scanners, ou servidores de C2, uso para phishing, malware com base nos dados do Vírus Total e outras fontes.
 3.  **Informações de Rede e Geográficas:**
     - **ASN:** Número e nome da organização.
     - **Provedor (ISP):** Nome do provedor.
@@ -120,3 +120,4 @@ with open(report_filename, "w", encoding="utf-8") as f:
     f.write("".join(full_response))
 
 print(f"[+] Relatório salvo com sucesso em: {report_filename}")
+
