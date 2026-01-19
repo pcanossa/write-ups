@@ -1,0 +1,312 @@
+
+        ## DADOS COLETADOS PARA ANÁLISE DE THREAT INTELLIGENCE
+
+        TIMESTAMP: 2026-01-15T12:27:26.470626
+
+        ### 1. Informações do Shodan
+        ```html
+        <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>191.252.156.7</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Search Engine for the Internet of Things">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://wire.shodan.io/v2.5.0/default/css/wire.css" media="(prefers-color-scheme: light)" rel="stylesheet"/>
+<link href="https://wire.shodan.io/v2.5.0/dark/css/wire.css" media="(prefers-color-scheme: dark)" rel="stylesheet"/>
+    <link rel="shortcut icon" href="https://www.shodan.io/static/img/favicon-60c1b1cd.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://www.shodan.io/static/img/apple-touch-icon-192-4eb04af5.png">
+    <link rel="search" href="https://www.shodan.io/static/opensearch-07a9aa48.xml" type="application/opensearchdescription+xml" title="Shodan">
+    <script defer src="https://kit.fontawesome.com/b7e79643d9.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+<div class="quickbar">
+  <ul>
+    <li><a href="https://www.shodan.io">Shodan</a>
+    </li>
+    <li><a href="https://maps.shodan.io">Maps</a>
+    </li>
+    <li><a href="https://images.shodan.io">Images</a>
+    </li>
+    <li><a href="https://monitor.shodan.io">Monitor</a>
+    </li>
+    <li><a href="https://developer.shodan.io">Developer</a>
+    </li>
+    <li><a href="https://www.shodan.io/about/products">More...</a>
+    </li>
+  </ul>
+</div>
+<div class="container u-full-width">
+  <div class="row">
+    <div class="twelve columns">
+<style>.searchbox {
+    font-family: Arial;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@media (max-width: 900px) {
+    .right-menu .menu-item-account {
+        display: none
+    }
+}
+</style>
+
+<div class="navbar">
+  <input id="menu-btn" type="checkbox" class="menu-btn"/>
+  <label for="menu-btn" class="menu-icon"><span class="navicon"><i class="fa fa-bars  fa-fw "></i></span>
+  </label><a href="/" class="title"><img src="https://www.shodan.io/static/img/logo-6abcc86b.png" alt="Shodan" width="112" height="32"/></a>
+  <ul class="menu sub-menu">
+    <li><a href="/explore"><i class="fas fa-globe  fa-fw "></i>Explore</a>
+    </li>
+
+    <li><a href="https://account.shodan.io/billing" target="_blank" rel="noopener noreferrer"><i class="fas fa-briefcase  fa-fw "></i>Pricing
+<i style="font-size: 1.1rem" class="fa fa-external-link  fa-fw "></i></a>
+    </li>
+  </ul>
+  <form action="/search" method="GET">
+    <div class="searchbox">
+      <div class="input-wrapper">
+        <label for="search-query" value="Enter search query" class="visually-hidden"></label>
+        <input id="search-query" type="text" name="query" placeholder="Type / to search" autocapitalize="none" spellcheck="false" data-focus-placeholder="Search" data-blur-placeholder="Type / to search"/>
+      </div>
+      <button type="submit" aria-label="Submit search query" data-balloon-disable="data-balloon-disable" class="button-red"><i class="fas fa-search  fa-fw "></i>
+      </button>
+    </div>
+  </form>
+  <ul class="menu main-menu right-menu">
+    <li><a href="/dashboard" class="highlight-success">Login</a>
+    </li>
+  </ul>
+</div>
+    </div>
+  </div>
+</div><br/><br/>
+<div class="container card-padding">
+  <div class="row">
+    <div class="twelve columns">
+      <h3 class="heading-highlight"><span>404: Not Found</span>
+      </h3>
+<div class="alert alert-notice">
+  <div><i class="far fa-info  fa-fw "></i>
+  </div><em>Note:</em>
+  <p>No information available for 191.252.156.7</p>
+</div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="container u-full-width bg-solid"><br/><br/>
+  <div class="container">
+    <div class="row">
+      <div class="three columns">
+        <h6 class="grid-heading">Products</h6>
+        <ul>
+          <li><a href="https://monitor.shodan.io" class="light">Monitor</a>
+          </li>
+          <li><a href="https://beta.shodan.io" class="light">Search Engine</a>
+          </li>
+          <li><a href="https://developer.shodan.io" class="light">Developer API</a>
+          </li>
+          <li><a href="https://maps.shodan.io" class="light">Maps</a>
+          </li>
+        </ul>
+      </div>
+      <div class="three columns">
+        <h6 style="visibility:hidden" class="grid-heading">&nbsp;</h6>
+        <ul>
+          <li><a href="https://enterprise.shodan.io" class="light">Bulk Data</a>
+          </li>
+          <li><a href="https://images.shodan.io" class="light">Images</a>
+          </li>
+          <li><a href="https://snippets.shodan.io" class="light">Snippets</a>
+          </li>
+        </ul>
+      </div>
+      <div class="three columns">
+        <h6 class="grid-heading">Pricing</h6>
+        <ul>
+          <li><a href="https://www.shodan.io/store/member" class="light">Membership</a>
+          </li>
+          <li><a href="https://developer.shodan.io/pricing" class="light">API Subscriptions</a>
+          </li>
+          <li><a href="https://enterprise.shodan.io" class="light">Enterprise</a>
+          </li>
+        </ul>
+      </div>
+      <div class="three columns">
+        <h6 class="grid-heading">Contact Us</h6>
+        <ul>
+          <li><a href="mailto:support@shodan.io" class="light">support@shodan.io</a>
+          </li>
+          <li>
+            <h5><a href="https://www.linkedin.com/company/shodan" aria-label="Linkedin" data-balloon-disable="data-balloon-disable" class="text-secondary"><i class="fab fa-linkedin   "></i></a>&nbsp;&nbsp;<a href="https://mastodon.shodan.io/@shodan" aria-label="Mastodon" data-balloon-disable="data-balloon-disable" class="text-secondary"><i class="fab fa-mastodon   "></i></a>&nbsp;&nbsp;<a href="https://twitter.com/shodanhq" aria-label="Twitter" data-balloon-disable="data-balloon-disable" class="text-secondary"><i class="fab fa-twitter   "></i></a>&nbsp;&nbsp;<a href="https://www.facebook.com/shodan.io" aria-label="Facebook" data-balloon-disable="data-balloon-disable" class="text-secondary"><i class="fab fa-facebook   "></i></a>
+            </h5>
+          </li>
+        </ul>
+        <p class="light">Shodan &reg; - All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://www.shodan.io/static/scripts/main-5f52b6a3.js"></script>
+  </body>
+</html>
+        ```
+
+        ### 2. Informações do IPInfo.io
+        ```json
+        {
+  "ip": "191.252.156.7",
+  "hostname": "vpsw4940.publiccloud.com.br",
+  "city": "São Paulo",
+  "region": "São Paulo",
+  "country": "BR",
+  "loc": "-23.5475,-46.6361",
+  "org": "AS27715 Locaweb Serviços de Internet S/A",
+  "postal": "01000-000",
+  "timezone": "America/Sao_Paulo",
+  "readme": "https://ipinfo.io/missingauth"
+}
+        ```
+
+        ### 3. Resultados do URLScan.io
+        ```json
+        {
+  "results": [],
+  "total": 0,
+  "took": 32,
+  "has_more": false
+}
+        ```
+
+        ### 4. Informações do VirusTotal
+        ```json
+        detecções = {"data": [{"id": "191.252.156.7", "type": "ip_address", "links": {"self": "https://www.virustotal.com/api/v3/ip_addresses/191.252.156.7"}, "attributes": {"country": "BR", "last_analysis_stats": {"malicious": 0, "suspicious": 0, "undetected": 93, "harmless": 0, "timeout": 0}, "last_analysis_results": {"Acronis": {"method": "blacklist", "engine_name": "Acronis", "category": "undetected", "result": "unrated"}, "0xSI_f33d": {"method": "blacklist", "engine_name": "0xSI_f33d", "category": "undetected", "result": "unrated"}, "Abusix": {"method": "blacklist", "engine_name": "Abusix", "category": "undetected", "result": "unrated"}, "ADMINUSLabs": {"method": "blacklist", "engine_name": "ADMINUSLabs", "category": "undetected", "result": "unrated"}, "Axur": {"method": "blacklist", "engine_name": "Axur", "category": "undetected", "result": "unrated"}, "ChainPatrol": {"method": "blacklist", "engine_name": "ChainPatrol", "category": "undetected", "result": "unrated"}, "Criminal IP": {"method": "blacklist", "engine_name": "Criminal IP", "category": "undetected", "result": "unrated"}, "AILabs (MONITORAPP)": {"method": "blacklist", "engine_name": "AILabs (MONITORAPP)", "category": "undetected", "result": "unrated"}, "AlienVault": {"method": "blacklist", "engine_name": "AlienVault", "category": "undetected", "result": "unrated"}, "alphaMountain.ai": {"method": "blacklist", "engine_name": "alphaMountain.ai", "category": "undetected", "result": "unrated"}, "AlphaSOC": {"method": "blacklist", "engine_name": "AlphaSOC", "category": "undetected", "result": "unrated"}, "Antiy-AVL": {"method": "blacklist", "engine_name": "Antiy-AVL", "category": "undetected", "result": "unrated"}, "ArcSight Threat Intelligence": {"method": "blacklist", "engine_name": "ArcSight Threat Intelligence", "category": "undetected", "result": "unrated"}, "AutoShun": {"method": "blacklist", "engine_name": "AutoShun", "category": "undetected", "result": "unrated"}, "benkow.cc": {"method": "blacklist", "engine_name": "benkow.cc", "category": "undetected", "result": "unrated"}, "Bfore.Ai PreCrime": {"method": "blacklist", "engine_name": "Bfore.Ai PreCrime", "category": "undetected", "result": "unrated"}, "BitDefender": {"method": "blacklist", "engine_name": "BitDefender", "category": "undetected", "result": "unrated"}, "Bkav": {"method": "blacklist", "engine_name": "Bkav", "category": "undetected", "result": "unrated"}, "Blueliv": {"method": "blacklist", "engine_name": "Blueliv", "category": "undetected", "result": "unrated"}, "Certego": {"method": "blacklist", "engine_name": "Certego", "category": "undetected", "result": "unrated"}, "Chong Lua Dao": {"method": "blacklist", "engine_name": "Chong Lua Dao", "category": "undetected", "result": "unrated"}, "CINS Army": {"method": "blacklist", "engine_name": "CINS Army", "category": "undetected", "result": "unrated"}, "Cluster25": {"method": "blacklist", "engine_name": "Cluster25", "category": "undetected", "result": "unrated"}, "CRDF": {"method": "blacklist", "engine_name": "CRDF", "category": "undetected", "result": "unrated"}, "CSIS Security Group": {"method": "blacklist", "engine_name": "CSIS Security Group", "category": "undetected", "result": "unrated"}, "Snort IP sample list": {"method": "blacklist", "engine_name": "Snort IP sample list", "category": "undetected", "result": "unrated"}, "CMC Threat Intelligence": {"method": "blacklist", "engine_name": "CMC Threat Intelligence", "category": "undetected", "result": "unrated"}, "Cyan": {"method": "blacklist", "engine_name": "Cyan", "category": "undetected", "result": "unrated"}, "Cyble": {"method": "blacklist", "engine_name": "Cyble", "category": "undetected", "result": "unrated"}, "CyRadar": {"method": "blacklist", "engine_name": "CyRadar", "category": "undetected", "result": "unrated"}, "DNS8": {"method": "blacklist", "engine_name": "DNS8", "category": "undetected", "result": "unrated"}, "Dr.Web": {"method": "blacklist", "engine_name": "Dr.Web", "category": "undetected", "result": "unrated"}, "Ermes": {"method": "blacklist", "engine_name": "Ermes", "category": "undetected", "result": "unrated"}, "ESET": {"method": "blacklist", "engine_name": "ESET", "category": "undetected", "result": "unrated"}, "ESTsecurity": {"method": "blacklist", "engine_name": "ESTsecurity", "category": "undetected", "result": "unrated"}, "EmergingThreats": {"method": "blacklist", "engine_name": "EmergingThreats", "category": "undetected", "result": "unrated"}, "Emsisoft": {"method": "blacklist", "engine_name": "Emsisoft", "category": "undetected", "result": "unrated"}, "Forcepoint ThreatSeeker": {"method": "blacklist", "engine_name": "Forcepoint ThreatSeeker", "category": "undetected", "result": "unrated"}, "Fortinet": {"method": "blacklist", "engine_name": "Fortinet", "category": "undetected", "result": "unrated"}, "G-Data": {"method": "blacklist", "engine_name": "G-Data", "category": "undetected", "result": "unrated"}, "GCP Abuse Intelligence": {"method": "blacklist", "engine_name": "GCP Abuse Intelligence", "category": "undetected", "result": "unrated"}, "Google Safebrowsing": {"method": "blacklist", "engine_name": "Google Safebrowsing", "category": "undetected", "result": "unrated"}, "GreenSnow": {"method": "blacklist", "engine_name": "GreenSnow", "category": "undetected", "result": "unrated"}, "Gridinsoft": {"method": "blacklist", "engine_name": "Gridinsoft", "category": "undetected", "result": "unrated"}, "Heimdal Security": {"method": "blacklist", "engine_name": "Heimdal Security", "category": "undetected", "result": "unrated"}, "Hunt.io Intelligence": {"method": "blacklist", "engine_name": "Hunt.io Intelligence", "category": "undetected", "result": "unrated"}, "IPsum": {"method": "blacklist", "engine_name": "IPsum", "category": "undetected", "result": "unrated"}, "Juniper Networks": {"method": "blacklist", "engine_name": "Juniper Networks", "category": "undetected", "result": "unrated"}, "Kaspersky": {"method": "blacklist", "engine_name": "Kaspersky", "category": "undetected", "result": "unrated"}, "Lionic": {"method": "blacklist", "engine_name": "Lionic", "category": "undetected", "result": "unrated"}, "Lumu": {"method": "blacklist", "engine_name": "Lumu", "category": "undetected", "result": "unrated"}, "MalwarePatrol": {"method": "blacklist", "engine_name": "MalwarePatrol", "category": "undetected", "result": "unrated"}, "MalwareURL": {"method": "blacklist", "engine_name": "MalwareURL", "category": "undetected", "result": "unrated"}, "Malwared": {"method": "blacklist", "engine_name": "Malwared", "category": "undetected", "result": "unrated"}, "Mimecast": {"method": "blacklist", "engine_name": "Mimecast", "category": "undetected", "result": "unrated"}, "Netcraft": {"method": "blacklist", "engine_name": "Netcraft", "category": "undetected", "result": "unrated"}, "OpenPhish": {"method": "blacklist", "engine_name": "OpenPhish", "category": "undetected", "result": "unrated"}, "Phishing Database": {"method": "blacklist", "engine_name": "Phishing Database", "category": "undetected", "result": "unrated"}, "PhishFort": {"method": "blacklist", "engine_name": "PhishFort", "category": "undetected", "result": "unrated"}, "PhishLabs": {"method": "blacklist", "engine_name": "PhishLabs", "category": "undetected", "result": "unrated"}, "Phishtank": {"method": "blacklist", "engine_name": "Phishtank", "category": "undetected", "result": "unrated"}, "PREBYTES": {"method": "blacklist", "engine_name": "PREBYTES", "category": "undetected", "result": "unrated"}, "PrecisionSec": {"method": "blacklist", "engine_name": "PrecisionSec", "category": "undetected", "result": "unrated"}, "Quick Heal": {"method": "blacklist", "engine_name": "Quick Heal", "category": "undetected", "result": "unrated"}, "Quttera": {"method": "blacklist", "engine_name": "Quttera", "category": "undetected", "result": "unrated"}, "SafeToOpen": {"method": "blacklist", "engine_name": "SafeToOpen", "category": "undetected", "result": "unrated"}, "Sansec eComscan": {"method": "blacklist", "engine_name": "Sansec eComscan", "category": "undetected", "result": "unrated"}, "Scantitan": {"method": "blacklist", "engine_name": "Scantitan", "category": "undetected", "result": "unrated"}, "SCUMWARE.org": {"method": "blacklist", "engine_name": "SCUMWARE.org", "category": "undetected", "result": "unrated"}, "Seclookup": {"method": "blacklist", "engine_name": "Seclookup", "category": "undetected", "result": "unrated"}, "SecureBrain": {"method": "blacklist", "engine_name": "SecureBrain", "category": "undetected", "result": "unrated"}, "SOCRadar": {"method": "blacklist", "engine_name": "SOCRadar", "category": "undetected", "result": "unrated"}, "Sophos": {"method": "blacklist", "engine_name": "Sophos", "category": "undetected", "result": "unrated"}, "Spam404": {"method": "blacklist", "engine_name": "Spam404", "category": "undetected", "result": "unrated"}, "StopForumSpam": {"method": "blacklist", "engine_name": "StopForumSpam", "category": "undetected", "result": "unrated"}, "Sucuri SiteCheck": {"method": "blacklist", "engine_name": "Sucuri SiteCheck", "category": "undetected", "result": "unrated"}, "ThreatHive": {"method": "blacklist", "engine_name": "ThreatHive", "category": "undetected", "result": "unrated"}, "Threatsourcing": {"method": "blacklist", "engine_name": "Threatsourcing", "category": "undetected", "result": "unrated"}, "Trustwave": {"method": "blacklist", "engine_name": "Trustwave", "category": "undetected", "result": "unrated"}, "URLhaus": {"method": "blacklist", "engine_name": "URLhaus", "category": "undetected", "result": "unrated"}, "URLQuery": {"method": "blacklist", "engine_name": "URLQuery", "category": "undetected", "result": "unrated"}, "Viettel Threat Intelligence": {"method": "blacklist", "engine_name": "Viettel Threat Intelligence", "category": "undetected", "result": "unrated"}, "VIPRE": {"method": "blacklist", "engine_name": "VIPRE", "category": "undetected", "result": "unrated"}, "VX Vault": {"method": "blacklist", "engine_name": "VX Vault", "category": "undetected", "result": "unrated"}, "ViriBack": {"method": "blacklist", "engine_name": "ViriBack", "category": "undetected", "result": "unrated"}, "Webroot": {"method": "blacklist", "engine_name": "Webroot", "category": "undetected", "result": "unrated"}, "Yandex Safebrowsing": {"method": "blacklist", "engine_name": "Yandex Safebrowsing", "category": "undetected", "result": "unrated"}, "ZeroCERT": {"method": "blacklist", "engine_name": "ZeroCERT", "category": "undetected", "result": "unrated"}, "desenmascara.me": {"method": "blacklist", "engine_name": "desenmascara.me", "category": "undetected", "result": "unrated"}, "malwares.com URL checker": {"method": "blacklist", "engine_name": "malwares.com URL checker", "category": "undetected", "result": "unrated"}, "securolytics": {"method": "blacklist", "engine_name": "securolytics", "category": "undetected", "result": "unrated"}, "Xcitium Verdict Cloud": {"method": "blacklist", "engine_name": "Xcitium Verdict Cloud", "category": "undetected", "result": "unrated"}, "ZeroFox": {"method": "blacklist", "engine_name": "ZeroFox", "category": "undetected", "result": "unrated"}}, "asn": 27715, "reputation": 0, "as_owner": "Locaweb Servicos de Internet SA", "last_modification_date": 1768494194, "regional_internet_registry": "LACNIC", "tags": [], "whois": "NetRange: 191.0.0.0 - 191.255.255.255\nCIDR: 191.0.0.0/8\nNetName: NET191\nNetHandle: NET-191-0-0-0-0\nParent: ()\nNetType: Allocated to LACNIC\nOriginAS: \nOrganization: Latin American and Caribbean IP address Regional Registry (LACNIC)\nRegDate: 1993-05-01\nUpdated: 2010-07-21\nRef: https://rdap.arin.net/registry/ip/191.0.0.0\nResourceLink: http://lacnic.net/cgi-bin/lacnic/whois\nResourceLink: whois.lacnic.net\nOrgName: Latin American and Caribbean IP address Regional Registry\nOrgId: LACNIC\nAddress: Rambla Republica de Mexico 6125\nCity: Montevideo\nStateProv: \nPostalCode: 11400\nCountry: UY\nRegDate: 2002-07-27\nUpdated: 2018-03-15\nRef: https://rdap.arin.net/registry/entity/LACNIC\nReferralServer: whois://whois.lacnic.net\nResourceLink: http://lacnic.net/cgi-bin/lacnic/whois\nOrgAbuseHandle: LWI100-ARIN\nOrgAbuseName: LACNIC Whois Info\nOrgAbusePhone: +598-2604-2222 \nOrgAbuseEmail: abuse@lacnic.net\nOrgAbuseRef: https://rdap.arin.net/registry/entity/LWI100-ARIN\nOrgTechHandle: LACNIC-ARIN\nOrgTechName: LACNIC Whois Info\nOrgTechPhone: +598-2604-2222 \nOrgTechEmail: whois-contact@lacnic.net\nOrgTechRef: https://rdap.arin.net/registry/entity/LACNIC-ARIN\n", "continent": "SA", "network": "191.252.0.0/16", "total_votes": {"harmless": 0, "malicious": 0}, "whois_date": 1614922021}}], "links": {"self": "https://www.virustotal.com/api/v3/search?query=191.252.156.7"}}
+        comentários da comunidade = {"data": [], "meta": {"count": 0}, "links": {"self": "https://www.virustotal.com/api/v3/ip_addresses/191.252.156.7/relationships/related_comments?limit=10", "related": "https://www.virustotal.com/api/v3/ip_addresses/191.252.156.7/related_comments"}}
+        arquivos comunicados = {"data": [], "meta": {"count": 0}, "links": {"self": "https://www.virustotal.com/api/v3/ip_addresses/191.252.156.7/communicating_files?limit=10"}}
+       ```
+
+        ### 5. Informações do AbuseIPDB
+        ```json 
+        {"data":{"ipAddress":"191.252.156.7","isPublic":true,"ipVersion":4,"isWhitelisted":null,"abuseConfidenceScore":0,"countryCode":"BR","usageType":"Data Center\/Web Hosting\/Transit","isp":"Locaweb Servi\u00e7os de Internet S\/A","domain":"locaweb.com.br","hostnames":["vpsw4940.publiccloud.com.br"],"isTor":false,"totalReports":0,"numDistinctUsers":0,"lastReportedAt":null}}
+        ```
+
+        ### 6. Informações do WHOIS via comando
+        ```html
+        % IP Client: 37.19.221.244
+ % Copyright (c) Nic.br - Use of this data is governed by the Use and
+% Privacy Policy at https://registro.br/upp . Distribution,
+% commercialization, reproduction, and use for advertising or similar
+% purposes are expressly prohibited.
+% 2026-01-15T14:27:03-03:00 - 37.19.221.244
+
+inetnum:     191.252.0.0/16
+aut-num:     AS27715
+abuse-c:     HOSIT
+owner:       Locaweb Servi�os de Internet S/A
+ownerid:     02.351.877/0001-52
+responsible: Gilberto Mautner
+country:     BR
+owner-c:     GIM6
+tech-c:      INRLO
+inetrev:     191.252.156.0/22
+nserver:     ns1.locaweb.com.br
+nsstat:      20260113 AA
+nslastaa:    20260113
+nserver:     ns2.locaweb.com.br
+nsstat:      20260113 AA
+nslastaa:    20260113
+nserver:     ns3.locaweb.com.br
+nsstat:      20260113 AA
+nslastaa:    20260113
+created:     20131220
+changed:     20220804
+
+nic-hdl-br:  GIM6
+person:      Locaweb Servi�os de Internet S/A
+e-mail:      hostmaster@locaweb.com.br
+country:     BR
+created:     19980119
+changed:     20240903
+
+nic-hdl-br:  HOSIT
+person:      Hospedagem de Sites
+e-mail:      abuse@locaweb.com.br
+country:     BR
+created:     20070308
+changed:     20171123
+
+nic-hdl-br:  INRLO
+person:      Infra Redes Locaweb
+e-mail:      infra-redes@locaweb.com.br
+country:     BR
+created:     20211004
+changed:     20211004
+
+% Security and mail abuse issues should also be addressed to cert.br,
+% respectivelly to cert@cert.br and mail-abuse@cert.br
+%
+% whois.registro.br only accepts exact match queries for domains,
+% registrants, contacts, tickets, providers, IPs, and ASNs.
+
+        ```
+
+        ### 7. Informações do Alien Vault OTX
+        ```json
+        {'pulses': []}
+        ```
+
+        ### 8. Cabeçalhos HTTP via cURL
+        ```html
+        Erro ao obter dados de cabeçalho pelo cURL:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0      0   0      0   0      0      0      0  --:--:-- --:--:-- --:--:--      0*   Trying 191.252.156.7:80...
+* Established connection to 191.252.156.7 (191.252.156.7 port 80) from 192.168.192.148 port 39414 
+* using HTTP/1.x
+> HEAD / HTTP/1.1
+> Host: 191.252.156.7
+> User-Agent: curl/8.18.0-rc3
+> Accept: */*
+> 
+* Request completely sent off
+
+  0      0   0      0   0      0      0      0  --:--:--  0:00:01 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:02 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:03 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:04 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:05 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:06 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:07 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:08 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:09 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:10 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:11 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:12 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:13 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:14 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:15 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:16 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:17 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:18 --:--:--      0* Recv failure: Connection reset by peer
+
+* closing connection #0
+curl: (56) Recv failure: Connection reset by peer
+
+        ```
+
+        ### 9. Informações do Scamalytics
+        ```json
+        {"scamalytics":{"status":"ok","mode":"live","ip":"191.252.156.7","scamalytics_score":0,"scamalytics_risk":"low","scamalytics_url":"https:\/\/scamalytics.com\/ip\/191.252.156.7","scamalytics_isp":"Locaweb Servi\u00e7os de Internet S\/A","scamalytics_org":"Locaweb Servi\u00e7os de Internet S\/A","scamalytics_isp_score":0,"scamalytics_isp_risk":"low","scamalytics_proxy":{"is_datacenter":false,"is_vpn":false,"is_apple_icloud_private_relay":false,"is_amazon_aws":false,"is_google":false},"is_blacklisted_external":false,"credits":{"used":16,"remaining":4984,"last_sync_timestamp_utc":"2026-01-15 17:26:36","seconds_elapsed_since_last_sync":50,"note":"Credits used and remaining are approximate values."},"exec":"23.62 ms"},"external_datasources":{"dbip":{"ip_country_code":"BR","ip_state_name":"Amazonas","ip_district_name":"Itacoatiara","ip_city":"Itacoatiara","ip_postcode":"","ip_geolocation":"-3.13504,-58.4385","ip_country_name":"Brazil","isp_name":"Locaweb Servi\u00e7os de Internet S\/A","org_name":"Locaweb Servi\u00e7os de Internet S\/A","connection_type":null,"history_monthly":{"10-2025":{"isp_name":"Locaweb Servi\u00e7os de Internet S\/A","org_name":"Locaweb Servi\u00e7os de Internet S\/A"},"11-2025":{"isp_name":"Locaweb Servi\u00e7os de Internet S\/A","org_name":"Locaweb Servi\u00e7os de Internet S\/A"},"12-2025":{"isp_name":"Locaweb Servi\u00e7os de Internet S\/A","org_name":"Locaweb Servi\u00e7os de Internet S\/A"}},"datasource_name":"db-ip.com","license_info":"info@scamalytics.com"},"ip2proxy":{"proxy_type":"DCH","datasource_name":"ip2proxy.com","license_info":"info@scamalytics.com"},"ip2proxy_lite":{"asn":"","as_name":"","proxy_type":"","proxy_last_seen":"","usage_type":"","ip_blacklisted":false,"ip_blacklist_type":"","ip_provider":"","ip_country_code":"","ip_country_name":"","ip_district_name":"","ip_city":"","isp_name":"","domain":"","datasource_name":"https:\/\/lite.ip2location.com\/ip2proxy-lite","license_info":"https:\/\/creativecommons.org\/licenses\/by-sa\/4.0","last_updated_timestamp_utc":"2026-01-15 03:11:46"},"maxmind_geolite2":{"asn":"27715","as_name":"Locaweb Servicos de Internet SA","ip_geoname_id":"3448439","ip_location_accuracy_km":"20","ip_country_code":"BR","ip_state_name":"S\u00c3\u00a3o Paulo","ip_district_name":"","ip_city":"S\u00c3\u00a3o Paulo","ip_metro_code":"","ip_postcode":"01000","ip_geolocation":"-23.6293,-46.6351","ip_country_name":"Brazil","ip_time_zone":"America\/Sao_Paulo","datasource_name":"maxmind.com and geonames.org","license_info":"https:\/\/creativecommons.org\/licenses\/by-sa\/4.0","last_updated_timestamp_utc":"2026-01-15 06:19:06"},"ipinfo":{"asn":"AS27715","ip_range_from":"191.252.0.0","ip_range_to":"191.252.255.255","as_name":"Locaweb Servi\u00c3\u00a7os de Internet S\/A","as_domain":"locaweb.com.br","ip_country_code":"BR","ip_country_name":"Brazil","ip_continent_code":"SA","ip_continent_name":"South America","datasource_name":"ipinfo.io","license_info":"https:\/\/creativecommons.org\/licenses\/by-sa\/4.0","last_updated_timestamp_utc":"2026-01-15 04:04:59"},"firehol":{"ip_blacklisted_30":false,"ip_blacklisted_1day":false,"is_proxy":false,"datasource_name":"https:\/\/iplists.firehol.org\/","license_info":"GPL v2","last_updated_timestamp_utc":"2026-01-15 02:04:25"},"ipsum":{"ip_blacklisted":false,"num_blacklists":0,"datasource_name":"https:\/\/github.com\/stamparm\/ipsum","license_info":"https:\/\/unlicense.org\/","last_updated_timestamp_utc":"2026-01-15 05:01:08"},"spamhaus_drop":{"ip_blacklisted":false,"datasource_name":"https:\/\/www.spamhaus.org\/drop","license_info":"https:\/\/www.spamhaus.org\/drop\/terms\/","last_updated_timestamp_utc":"2026-01-15 07:00:02"},"x4bnet":{"is_vpn":false,"is_datacenter":false,"is_tor":false,"is_blacklisted_spambot":false,"is_bot_operamini":false,"is_bot_semrush":false,"datasource_name":"https:\/\/github.com\/X4BNet\/","license_info":"https:\/\/www.gnu.org\/licenses\/agpl-3.0.en.html","last_updated_timestamp_utc":"2026-01-15 11:00:14"},"google":{"is_google_general":false,"is_googlebot":false,"is_special_crawler":false,"is_user_triggered_fetcher":false,"datasource_name":"https:\/\/developers.google.com\/","last_updated_timestamp_utc":"2026-01-15 12:00:02"},"amazon_aws":{"data":[],"datasource_name":"https:\/\/docs.aws.amazon.com\/","last_updated_timestamp_utc":"2026-01-15 13:00:04"},"apple_icloud_private_relay":{"data":{"ip_prefix":"","country_code":"","state_code":"","city":"","postcode":""},"datasource_name":"https:\/\/developer.apple.com\/","last_updated_timestamp_utc":"2026-01-15 14:00:48"}}}
+        ```
+        

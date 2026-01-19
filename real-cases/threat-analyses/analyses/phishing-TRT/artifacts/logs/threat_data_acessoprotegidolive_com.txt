@@ -1,0 +1,184 @@
+
+        ## DADOS COLETADOS PARA ANÁLISE DE THREAT INTELLIGENCE
+
+        TIMESTAMP: 2026-01-14T12:54:54.783481
+
+        ### 1. Informações do WHOIS
+        ```html
+           Domain Name: ACESSOPROTEGIDOLIVE.COM
+   Registry Domain ID: 3042507942_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.tucows.com
+   Registrar URL: http://www.tucows.com
+   Updated Date: 2025-11-27T02:19:28Z
+   Creation Date: 2025-11-27T01:56:28Z
+   Registry Expiry Date: 2026-11-27T01:56:28Z
+   Registrar: Tucows Domains Inc.
+   Registrar IANA ID: 69
+   Registrar Abuse Contact Email: domainabuse@tucows.com
+   Registrar Abuse Contact Phone: +1.4165350123
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Name Server: ALEC.NS.CLOUDFLARE.COM
+   Name Server: BONNIE.NS.CLOUDFLARE.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-01-14T17:54:23Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+Domain Name: ACESSOPROTEGIDOLIVE.COM
+Registry Domain ID: 3042507942_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.tucows.com
+Registrar URL: http://tucowsdomains.com
+Updated Date: 2025-11-27T02:19:28
+Creation Date: 2025-11-27T01:56:28
+Registrar Registration Expiration Date: 2026-11-27T01:56:28
+Registrar: TUCOWS DOMAINS, INC.
+Registrar IANA ID: 69
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+Registry Registrant ID: 
+Registrant Name: REDACTED FOR PRIVACY
+Registrant Organization: REDACTED FOR PRIVACY
+Registrant Street: REDACTED FOR PRIVACY 
+Registrant City: REDACTED FOR PRIVACY
+Registrant State/Province: Charlestown
+Registrant Postal Code: REDACTED FOR PRIVACY
+Registrant Country: KN
+Registrant Phone: REDACTED FOR PRIVACY
+Registrant Phone Ext: 
+Registrant Fax: REDACTED FOR PRIVACY
+Registrant Fax Ext: 
+Registrant Email: https://tieredaccess.com/contact/ce250adf-c19e-4ed4-a29b-ea99cbd56afe
+Name Server: bonnie.ns.cloudflare.com
+Name Server: alec.ns.cloudflare.com
+DNSSEC: unsigned
+Registrar Abuse Contact Email: domainabuse@tucows.com
+Registrar Abuse Contact Phone: +1.4165350123
+URL of the ICANN WHOIS Data Problem Reporting System: https://icann.org/wicf
+>>> Last update of WHOIS database: 2026-01-14T17:54:34Z <<<
+
+"For more information on Whois status codes, please visit https://icann.org/epp"
+
+The Data in the Tucows Registrar WHOIS database is provided to you by Tucows
+for information purposes only, and may be used to assist you in obtaining
+information about or related to a domain name's registration record.
+
+Tucows makes this information available "as is," and does not guarantee its
+accuracy.
+
+By submitting a WHOIS query, you agree that you will use this data only for
+lawful purposes and that, under no circumstances will you use this data to:
+a) allow, enable, or otherwise support the transmission by e-mail,
+telephone, or facsimile of mass, unsolicited, commercial advertising or
+solicitations to entities other than the data recipient's own existing
+customers; or (b) enable high volume, automated, electronic processes that
+send queries or data to the systems of any Registry Operator or
+ICANN-Accredited registrar, except as reasonably necessary to register
+domain names or modify existing registrations.
+
+The compilation, repackaging, dissemination or other use of this Data is
+expressly prohibited without the prior written consent of Tucows.
+
+Tucows reserves the right to terminate your access to the Tucows WHOIS
+database in its sole discretion, including without limitation, for excessive
+querying of the WHOIS database or for failure to otherwise abide by this
+policy.
+
+Tucows reserves the right to modify these terms at any time.
+
+By submitting this query, you agree to abide by these terms.
+
+NOTE: THE WHOIS DATABASE IS A CONTACT DATABASE ONLY.  LACK OF A DOMAIN
+RECORD DOES NOT SIGNIFY DOMAIN AVAILABILITY.
+
+
+        ```
+
+        ### 2. Informações do Urlscan.io
+        ```json
+        {'results': [{'task': {'visibility': 'public', 'method': 'manual', 'domain': 'acess200.acessoportalatendimento.app', 'apexDomain': 'acessoportalatendimento.app', 'time': '2026-01-09T18:48:00.622Z', 'uuid': '019ba416-223f-74ba-b945-0026c061f5ee', 'url': 'https://acess200.acessoportalatendimento.app/'}, 'page': {'domain': 'verificacentral.acessoprotegidolive.com', 'ip': '104.26.9.96'}, 'stats': {'uniqIPs': 4, 'uniqCountries': 1, 'dataLength': 461908, 'encodedDataLength': 153320, 'requests': 9}}, {'task': {'visibility': 'public', 'method': 'api', 'domain': 'verificacentral.acessoprotegidolive.com', 'apexDomain': 'acessoprotegidolive.com', 'time': '2025-12-29T18:44:19.563Z', 'uuid': '019b6b6c-d07e-7581-b744-24cc65ad82dd', 'url': 'https://verificacentral.acessoprotegidolive.com/'}, 'page': {'domain': 'verificacentral.acessoprotegidolive.com', 'ip': '104.26.9.96'}, 'stats': {'uniqIPs': 4, 'uniqCountries': 1, 'dataLength': 461769, 'encodedDataLength': 153923, 'requests': 9}}, {'task': {'visibility': 'public', 'method': 'api', 'domain': 'acess200.acessoportalatendimento.app', 'apexDomain': 'acessoportalatendimento.app', 'time': '2025-12-29T09:53:28.089Z', 'uuid': '019b6986-b4bc-7317-985d-778981e44be3', 'url': 'https://acess200.acessoportalatendimento.app/', 'tags': ['falconsandbox']}, 'page': {'domain': 'verificacentral.acessoprotegidolive.com', 'ip': '104.26.8.96'}, 'stats': {'uniqIPs': 2, 'uniqCountries': 1, 'dataLength': 422747, 'encodedDataLength': 140457, 'requests': 6}}, {'task': {'visibility': 'public', 'method': 'manual', 'domain': 'acess200.acessoportalatendimento.app', 'apexDomain': 'acessoportalatendimento.app', 'time': '2025-12-29T09:26:47.450Z', 'uuid': '019b696e-6584-73cb-8121-5cf59ce20aee', 'url': 'https://acess200.acessoportalatendimento.app/'}, 'page': {'domain': 'verificacentral.acessoprotegidolive.com', 'ip': '104.26.8.96'}, 'stats': {'uniqIPs': 4, 'uniqCountries': 1, 'dataLength': 488183, 'encodedDataLength': 162740, 'requests': 9}}, {'task': {'visibility': 'public', 'method': 'api', 'domain': 'entrardadosprocess.acessoprotegidolive.com', 'apexDomain': 'acessoprotegidolive.com', 'time': '2025-12-21T00:11:45.021Z', 'uuid': '019b3e3f-5ff4-743e-9c8c-d8473ae8c69a', 'url': 'https://entrardadosprocess.acessoprotegidolive.com/'}, 'page': {'domain': 'entrardadosprocess.acessoprotegidolive.com', 'ip': '104.26.8.96'}, 'stats': {'uniqIPs': 4, 'uniqCountries': 1, 'dataLength': 468265, 'encodedDataLength': 156244, 'requests': 9}}, {'task': {'visibility': 'public', 'method': 'api', 'domain': 'entrardadosprocess.acessoprotegidolive.com', 'apexDomain': 'acessoprotegidolive.com', 'time': '2025-12-19T15:06:38.686Z', 'uuid': '019b3725-df49-764d-8792-5702f8a0421b', 'url': 'https://entrardadosprocess.acessoprotegidolive.com/'}, 'page': {'domain': 'entrardadosprocess.acessoprotegidolive.com', 'ip': '172.67.75.34'}, 'stats': {'uniqIPs': 4, 'uniqCountries': 1, 'dataLength': 465622, 'encodedDataLength': 155087, 'requests': 9}}, {'task': {'visibility': 'public', 'method': 'api', 'domain': 'entrardadosprocess.acessoprotegidolive.com', 'apexDomain': 'acessoprotegidolive.com', 'time': '2025-12-19T15:06:22.218Z', 'uuid': '019b3725-b55f-77d9-9f12-aaffa38bb24c', 'url': 'https://entrardadosprocess.acessoprotegidolive.com/'}, 'page': {'domain': 'entrardadosprocess.acessoprotegidolive.com', 'ip': '104.26.9.96'}, 'stats': {'uniqIPs': 3, 'uniqCountries': 1, 'dataLength': 467018, 'encodedDataLength': 155433, 'requests': 9}}, {'task': {'visibility': 'public', 'method': 'api', 'domain': 'entrardadosprocess.acessoprotegidolive.com', 'apexDomain': 'acessoprotegidolive.com', 'time': '2025-12-19T15:06:08.100Z', 'uuid': '019b3725-7e53-76f7-a068-180be97945c9', 'url': 'https://entrardadosprocess.acessoprotegidolive.com/'}, 'page': {'domain': 'entrardadosprocess.acessoprotegidolive.com', 'ip': '104.26.8.96'}, 'stats': {'uniqIPs': 4, 'uniqCountries': 1, 'dataLength': 466873, 'encodedDataLength': 155685, 'requests': 9}}, {'task': {'visibility': 'public', 'method': 'manual', 'domain': 'acess200.acessoportalatendimento.app', 'apexDomain': 'acessoportalatendimento.app', 'time': '2025-12-02T18:49:15.646Z', 'uuid': '019ae065-5726-76c8-a555-c22463f4b914', 'url': 'https://acess200.acessoportalatendimento.app/'}, 'page': {'domain': 'verificacentral.acessoprotegidolive.com', 'ip': '104.26.8.96'}, 'stats': {'uniqIPs': 4, 'uniqCountries': 1, 'dataLength': 461828, 'encodedDataLength': 154398, 'requests': 9}}]}
+        ```
+
+        ### 3. Informações do VirusTotal
+        ```json
+        detecções = {"data": {"id": "acessoprotegidolive.com", "type": "domain", "links": {"self": "https://www.virustotal.com/api/v3/domains/acessoprotegidolive.com"}, "attributes": {"last_dns_records_date": 1767740481, "creation_date": 1764201600, "last_analysis_results": {"Acronis": {"method": "blacklist", "engine_name": "Acronis", "category": "undetected", "result": "unrated"}, "0xSI_f33d": {"method": "blacklist", "engine_name": "0xSI_f33d", "category": "undetected", "result": "unrated"}, "Abusix": {"method": "blacklist", "engine_name": "Abusix", "category": "undetected", "result": "unrated"}, "ADMINUSLabs": {"method": "blacklist", "engine_name": "ADMINUSLabs", "category": "undetected", "result": "unrated"}, "Axur": {"method": "blacklist", "engine_name": "Axur", "category": "undetected", "result": "unrated"}, "ChainPatrol": {"method": "blacklist", "engine_name": "ChainPatrol", "category": "undetected", "result": "unrated"}, "Criminal IP": {"method": "blacklist", "engine_name": "Criminal IP", "category": "undetected", "result": "unrated"}, "AILabs (MONITORAPP)": {"method": "blacklist", "engine_name": "AILabs (MONITORAPP)", "category": "undetected", "result": "unrated"}, "AlienVault": {"method": "blacklist", "engine_name": "AlienVault", "category": "undetected", "result": "unrated"}, "alphaMountain.ai": {"method": "blacklist", "engine_name": "alphaMountain.ai", "category": "undetected", "result": "unrated"}, "AlphaSOC": {"method": "blacklist", "engine_name": "AlphaSOC", "category": "undetected", "result": "unrated"}, "Antiy-AVL": {"method": "blacklist", "engine_name": "Antiy-AVL", "category": "undetected", "result": "unrated"}, "ArcSight Threat Intelligence": {"method": "blacklist", "engine_name": "ArcSight Threat Intelligence", "category": "undetected", "result": "unrated"}, "AutoShun": {"method": "blacklist", "engine_name": "AutoShun", "category": "undetected", "result": "unrated"}, "benkow.cc": {"method": "blacklist", "engine_name": "benkow.cc", "category": "undetected", "result": "unrated"}, "Bfore.Ai PreCrime": {"method": "blacklist", "engine_name": "Bfore.Ai PreCrime", "category": "undetected", "result": "unrated"}, "BitDefender": {"method": "blacklist", "engine_name": "BitDefender", "category": "undetected", "result": "unrated"}, "Bkav": {"method": "blacklist", "engine_name": "Bkav", "category": "undetected", "result": "unrated"}, "Blueliv": {"method": "blacklist", "engine_name": "Blueliv", "category": "undetected", "result": "unrated"}, "Certego": {"method": "blacklist", "engine_name": "Certego", "category": "undetected", "result": "unrated"}, "Chong Lua Dao": {"method": "blacklist", "engine_name": "Chong Lua Dao", "category": "undetected", "result": "unrated"}, "CINS Army": {"method": "blacklist", "engine_name": "CINS Army", "category": "undetected", "result": "unrated"}, "Cluster25": {"method": "blacklist", "engine_name": "Cluster25", "category": "undetected", "result": "unrated"}, "CRDF": {"method": "blacklist", "engine_name": "CRDF", "category": "undetected", "result": "unrated"}, "CSIS Security Group": {"method": "blacklist", "engine_name": "CSIS Security Group", "category": "undetected", "result": "unrated"}, "Snort IP sample list": {"method": "blacklist", "engine_name": "Snort IP sample list", "category": "undetected", "result": "unrated"}, "CMC Threat Intelligence": {"method": "blacklist", "engine_name": "CMC Threat Intelligence", "category": "undetected", "result": "unrated"}, "Cyan": {"method": "blacklist", "engine_name": "Cyan", "category": "undetected", "result": "unrated"}, "Cyble": {"method": "blacklist", "engine_name": "Cyble", "category": "undetected", "result": "unrated"}, "CyRadar": {"method": "blacklist", "engine_name": "CyRadar", "category": "undetected", "result": "unrated"}, "DNS8": {"method": "blacklist", "engine_name": "DNS8", "category": "undetected", "result": "unrated"}, "Dr.Web": {"method": "blacklist", "engine_name": "Dr.Web", "category": "undetected", "result": "unrated"}, "Ermes": {"method": "blacklist", "engine_name": "Ermes", "category": "undetected", "result": "unrated"}, "ESET": {"method": "blacklist", "engine_name": "ESET", "category": "undetected", "result": "unrated"}, "ESTsecurity": {"method": "blacklist", "engine_name": "ESTsecurity", "category": "undetected", "result": "unrated"}, "EmergingThreats": {"method": "blacklist", "engine_name": "EmergingThreats", "category": "undetected", "result": "unrated"}, "Emsisoft": {"method": "blacklist", "engine_name": "Emsisoft", "category": "undetected", "result": "unrated"}, "Forcepoint ThreatSeeker": {"method": "blacklist", "engine_name": "Forcepoint ThreatSeeker", "category": "undetected", "result": "unrated"}, "Fortinet": {"method": "blacklist", "engine_name": "Fortinet", "category": "undetected", "result": "unrated"}, "G-Data": {"method": "blacklist", "engine_name": "G-Data", "category": "undetected", "result": "unrated"}, "GCP Abuse Intelligence": {"method": "blacklist", "engine_name": "GCP Abuse Intelligence", "category": "undetected", "result": "unrated"}, "Google Safebrowsing": {"method": "blacklist", "engine_name": "Google Safebrowsing", "category": "undetected", "result": "unrated"}, "GreenSnow": {"method": "blacklist", "engine_name": "GreenSnow", "category": "undetected", "result": "unrated"}, "Gridinsoft": {"method": "blacklist", "engine_name": "Gridinsoft", "category": "undetected", "result": "unrated"}, "Heimdal Security": {"method": "blacklist", "engine_name": "Heimdal Security", "category": "undetected", "result": "unrated"}, "Hunt.io Intelligence": {"method": "blacklist", "engine_name": "Hunt.io Intelligence", "category": "undetected", "result": "unrated"}, "IPsum": {"method": "blacklist", "engine_name": "IPsum", "category": "undetected", "result": "unrated"}, "Juniper Networks": {"method": "blacklist", "engine_name": "Juniper Networks", "category": "undetected", "result": "unrated"}, "Kaspersky": {"method": "blacklist", "engine_name": "Kaspersky", "category": "undetected", "result": "unrated"}, "Lionic": {"method": "blacklist", "engine_name": "Lionic", "category": "undetected", "result": "unrated"}, "Lumu": {"method": "blacklist", "engine_name": "Lumu", "category": "undetected", "result": "unrated"}, "MalwarePatrol": {"method": "blacklist", "engine_name": "MalwarePatrol", "category": "undetected", "result": "unrated"}, "MalwareURL": {"method": "blacklist", "engine_name": "MalwareURL", "category": "undetected", "result": "unrated"}, "Malwared": {"method": "blacklist", "engine_name": "Malwared", "category": "undetected", "result": "unrated"}, "Mimecast": {"method": "blacklist", "engine_name": "Mimecast", "category": "undetected", "result": "unrated"}, "Netcraft": {"method": "blacklist", "engine_name": "Netcraft", "category": "undetected", "result": "unrated"}, "OpenPhish": {"method": "blacklist", "engine_name": "OpenPhish", "category": "undetected", "result": "unrated"}, "Phishing Database": {"method": "blacklist", "engine_name": "Phishing Database", "category": "undetected", "result": "unrated"}, "PhishFort": {"method": "blacklist", "engine_name": "PhishFort", "category": "undetected", "result": "unrated"}, "PhishLabs": {"method": "blacklist", "engine_name": "PhishLabs", "category": "undetected", "result": "unrated"}, "Phishtank": {"method": "blacklist", "engine_name": "Phishtank", "category": "undetected", "result": "unrated"}, "PREBYTES": {"method": "blacklist", "engine_name": "PREBYTES", "category": "undetected", "result": "unrated"}, "PrecisionSec": {"method": "blacklist", "engine_name": "PrecisionSec", "category": "undetected", "result": "unrated"}, "Quick Heal": {"method": "blacklist", "engine_name": "Quick Heal", "category": "undetected", "result": "unrated"}, "Quttera": {"method": "blacklist", "engine_name": "Quttera", "category": "undetected", "result": "unrated"}, "SafeToOpen": {"method": "blacklist", "engine_name": "SafeToOpen", "category": "undetected", "result": "unrated"}, "Sansec eComscan": {"method": "blacklist", "engine_name": "Sansec eComscan", "category": "undetected", "result": "unrated"}, "Scantitan": {"method": "blacklist", "engine_name": "Scantitan", "category": "undetected", "result": "unrated"}, "SCUMWARE.org": {"method": "blacklist", "engine_name": "SCUMWARE.org", "category": "undetected", "result": "unrated"}, "Seclookup": {"method": "blacklist", "engine_name": "Seclookup", "category": "undetected", "result": "unrated"}, "SecureBrain": {"method": "blacklist", "engine_name": "SecureBrain", "category": "undetected", "result": "unrated"}, "SOCRadar": {"method": "blacklist", "engine_name": "SOCRadar", "category": "undetected", "result": "unrated"}, "Sophos": {"method": "blacklist", "engine_name": "Sophos", "category": "undetected", "result": "unrated"}, "Spam404": {"method": "blacklist", "engine_name": "Spam404", "category": "undetected", "result": "unrated"}, "StopForumSpam": {"method": "blacklist", "engine_name": "StopForumSpam", "category": "undetected", "result": "unrated"}, "Sucuri SiteCheck": {"method": "blacklist", "engine_name": "Sucuri SiteCheck", "category": "undetected", "result": "unrated"}, "ThreatHive": {"method": "blacklist", "engine_name": "ThreatHive", "category": "undetected", "result": "unrated"}, "Threatsourcing": {"method": "blacklist", "engine_name": "Threatsourcing", "category": "undetected", "result": "unrated"}, "Trustwave": {"method": "blacklist", "engine_name": "Trustwave", "category": "undetected", "result": "unrated"}, "URLhaus": {"method": "blacklist", "engine_name": "URLhaus", "category": "undetected", "result": "unrated"}, "URLQuery": {"method": "blacklist", "engine_name": "URLQuery", "category": "undetected", "result": "unrated"}, "Viettel Threat Intelligence": {"method": "blacklist", "engine_name": "Viettel Threat Intelligence", "category": "undetected", "result": "unrated"}, "VIPRE": {"method": "blacklist", "engine_name": "VIPRE", "category": "undetected", "result": "unrated"}, "VX Vault": {"method": "blacklist", "engine_name": "VX Vault", "category": "undetected", "result": "unrated"}, "ViriBack": {"method": "blacklist", "engine_name": "ViriBack", "category": "undetected", "result": "unrated"}, "Webroot": {"method": "blacklist", "engine_name": "Webroot", "category": "undetected", "result": "unrated"}, "Yandex Safebrowsing": {"method": "blacklist", "engine_name": "Yandex Safebrowsing", "category": "undetected", "result": "unrated"}, "ZeroCERT": {"method": "blacklist", "engine_name": "ZeroCERT", "category": "undetected", "result": "unrated"}, "desenmascara.me": {"method": "blacklist", "engine_name": "desenmascara.me", "category": "undetected", "result": "unrated"}, "malwares.com URL checker": {"method": "blacklist", "engine_name": "malwares.com URL checker", "category": "undetected", "result": "unrated"}, "securolytics": {"method": "blacklist", "engine_name": "securolytics", "category": "undetected", "result": "unrated"}, "Xcitium Verdict Cloud": {"method": "blacklist", "engine_name": "Xcitium Verdict Cloud", "category": "undetected", "result": "unrated"}, "ZeroFox": {"method": "blacklist", "engine_name": "ZeroFox", "category": "undetected", "result": "unrated"}}, "total_votes": {"harmless": 0, "malicious": 1}, "whois": "Create date: 2025-11-27 00:00:00\nDomain name: acessoprotegidolive.com\nDomain registrar id: 69\nDomain registrar url: http://www.tucows.com\nExpiry date: 2026-11-27 00:00:00\nName server 1: bonnie.ns.cloudflare.com\nName server 2: alec.ns.cloudflare.com\nQuery time: 2025-11-28 11:36:08\nRegistrant city: 1f8f4166599d23ee\nRegistrant company: 1f8f4166599d23ee\nRegistrant country: Saint Kitts and Nevis\nRegistrant email: 30872cc98252438cs@\nRegistrant fax: 635485272a89f94f\nRegistrant name: 1f8f4166599d23ee\nRegistrant phone: 635485272a89f94f\nRegistrant state: 5c1896d54f3bb30d\nRegistrant zip: 1f8f4166599d23ee\nUpdate date: 2025-11-27 00:00:00", "categories": {"Forcepoint ThreatSeeker": "newly registered websites"}, "whois_date": 1795737600, "last_update_date": 1764201600, "last_modification_date": 1768258198, "last_analysis_date": 1767740409, "last_dns_records": [{"type": "NS", "ttl": 21600, "value": "alec.ns.cloudflare.com"}, {"type": "SOA", "ttl": 1800, "value": "alec.ns.cloudflare.com", "rname": "dns.cloudflare.com", "serial": 2392004666, "refresh": 10000, "retry": 2400, "expire": 604800, "minimum": 1800}, {"type": "NS", "ttl": 21600, "value": "bonnie.ns.cloudflare.com"}], "last_analysis_stats": {"malicious": 0, "suspicious": 0, "undetected": 93, "harmless": 0, "timeout": 0}, "rdap": {"ldh_name": "acessoprotegidolive.com", "unicode_name": "acessoprotegidolive.com", "events": [{"event_action": "registration", "event_date": "2025-11-27T01:56:28Z", "event_actor": "", "links": []}, {"event_action": "registrar expiration", "event_date": "2026-11-27T01:56:28Z", "event_actor": "", "links": []}, {"event_action": "last update of RDAP database", "event_date": "2025-11-27T02:19:28Z", "event_actor": "", "links": []}, {"event_action": "last changed", "event_date": "2025-11-27T02:19:28Z", "event_actor": "", "links": []}], "notices": [{"title": "Status Codes", "description": ["For more information on domain status codes, please visit https://icann.org/epp"], "links": [{"href": "https://icann.org/epp", "rel": "glossary", "type": "text/html", "value": "https://opensrs.rdap.tucows.com/domain/acessoprotegidolive.com", "title": "", "media": "", "href_lang": []}], "type": ""}, {"title": "RDDS Inaccuracy Complaint Form", "description": ["URL of the ICANN RDDS Inaccuracy Complaint Form: https://icann.org/wicf"], "links": [{"href": "https://icann.org/wicf", "rel": "help", "type": "text/html", "value": "https://opensrs.rdap.tucows.com/domain/acessoprotegidolive.com", "title": "", "media": "", "href_lang": []}], "type": ""}, {"title": "Terms of Service", "description": ["The data provided by the Registration Data Access Protocol (\u201cRDAP\u201d or \u201cWhois\u201d) is provided to you by Tucows for information purposes only and may be used to assist you in obtaining information about or related to a domain name's registration record. These terms govern your use of this service and access to this database. We reserve the right to modify these terms at any time.", "This information is provided \"as is\" and does not guarantee its accuracy.", "By submitting a query, you certify that you have a legitimate purpose for requesting the data, that you will use this data only for lawful purposes and delete the data immediately when the data are no longer necessary for your lawful or legitimate purpose, and that, under no circumstances, will you use this data to: a) allow, enable, or otherwise support the transmission of mass, unsolicited, commercial advertising, or solicitations to entities other than the data recipient\u2019s own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of any registry operator or ICANN-accredited registrar, except as reasonably necessary to register domain names or modify existing registrations.", "The compilation, repackaging, dissemination, or other use of these data is expressly prohibited.", "Your access to the database may be terminated at any time in our sole discretion including, without limitation, for excessive querying of the database or for failure to otherwise abide by this policy.", "Your IP address, the queried domain, the response, and a timestamp is stored for the purposes of maintaining the service and to ensure adherence with these terms.", "By submitting this query, you agree to these terms.", "NOTE: THIS DATABASE IS A CONTACT DATABASE ONLY.  LACK OF A DOMAIN RECORD DOES NOT SIGNIFY DOMAIN AVAILABILITY."], "links": [{"href": "http://www.tucowsdomains.com/rdap/tos", "rel": "terms-of-service", "type": "text/html", "value": "https://opensrs.rdap.tucows.com/domain/acessoprotegidolive.com", "title": "", "media": "", "href_lang": []}], "type": ""}], "nameservers": [{"ldh_name": "bonnie.ns.cloudflare.com", "unicode_name": "bonnie.ns.cloudflare.com", "object_class_name": "nameserver", "lang": "en", "handle": "", "events": [], "links": [], "notices": [], "status": [], "port43": "", "entities": [], "remarks": []}, {"ldh_name": "alec.ns.cloudflare.com", "unicode_name": "alec.ns.cloudflare.com", "object_class_name": "nameserver", "lang": "en", "handle": "", "events": [], "links": [], "notices": [], "status": [], "port43": "", "entities": [], "remarks": []}], "rdap_conformance": ["rdap_level_0", "icann_rdap_technical_implementation_guide_1", "icann_rdap_response_profile_1", "redacted"], "entities": [{"object_class_name": "entity", "vcard_array": [{"name": "version", "type": "text", "values": ["4.0"], "parameters": {}}, {"name": "fn", "type": "text", "values": [""], "parameters": {}}, {"name": "kind", "type": "text", "values": ["individual"], "parameters": {}}, {"name": "lang", "type": "language-tag", "values": ["en"], "parameters": {}}, {"name": "adr", "parameters": {"cc": ["KN"]}, "type": "text", "values": ["", "", "", "", "Charlestown", "", ""]}, {"name": "contact-uri", "type": "uri", "values": ["https://tieredaccess.com/contact/cce69101-435c-4fe2-a725-f6f029480651"], "parameters": {}}], "roles": ["registrant"], "handle": "", "public_ids": [], "entities": [], "remarks": [], "links": [], "events": [], "as_event_actor": [], "status": [], "port43": "", "networks": [], "autnums": [], "url": "", "lang": "", "rdap_conformance": []}, {"object_class_name": "entity", "handle": "69", "vcard_array": [{"name": "version", "type": "text", "values": ["4.0"], "parameters": {}}, {"name": "fn", "type": "text", "values": ["TUCOWS DOMAINS, INC."], "parameters": {}}, {"name": "kind", "type": "text", "values": ["individual"], "parameters": {}}, {"name": "lang", "type": "language-tag", "values": ["en"], "parameters": {}}], "roles": ["registrar"], "public_ids": [{"type": "IANA Registrar ID", "identifier": "69"}], "entities": [{"object_class_name": "entity", "vcard_array": [{"name": "version", "type": "text", "values": ["4.0"], "parameters": {}}, {"name": "fn", "type": "text", "values": [""], "parameters": {}}, {"name": "kind", "type": "text", "values": ["individual"], "parameters": {}}, {"name": "lang", "type": "language-tag", "values": ["en"], "parameters": {}}, {"name": "tel", "parameters": {"type": ["voice"]}, "type": "uri", "values": ["tel:+1.4165350123"]}, {"name": "email", "type": "text", "values": ["domainabuse@tucows.com"], "parameters": {}}], "roles": ["abuse"], "handle": "", "public_ids": [], "entities": [], "remarks": [], "links": [], "events": [], "as_event_actor": [], "status": [], "port43": "", "networks": [], "autnums": [], "url": "", "lang": "", "rdap_conformance": []}], "links": [{"href": "http://tucowsdomains.com", "rel": "about", "value": "https://opensrs.rdap.tucows.com/", "type": "", "title": "", "media": "", "href_lang": []}], "remarks": [], "events": [], "as_event_actor": [], "status": [], "port43": "", "networks": [], "autnums": [], "url": "", "lang": "", "rdap_conformance": []}], "object_class_name": "domain", "status": ["client transfer prohibited", "client update prohibited"], "secure_dns": {"delegation_signed": false, "zone_signed": false, "max_sig_life": 0, "ds_data": [], "key_data": []}, "handle": "", "punycode": "", "type": "", "links": [], "port43": "", "switch_name": "", "public_ids": [], "lang": "", "remarks": [], "nask0_state": "", "variants": []}, "tld": "com", "tags": [], "reputation": -1, "popularity_ranks": {}}}}
+        comentários da comunidade = {"data": [{"type": "comment", "id": "d-acessoprotegidolive.com-d6ba872a"}], "meta": {"count": 1}, "links": {"self": "https://www.virustotal.com/api/v3/domains/acessoprotegidolive.com/relationships/related_comments?limit=10", "related": "https://www.virustotal.com/api/v3/domains/acessoprotegidolive.com/related_comments"}}
+        arquivos comunicados = {"data": [], "meta": {"count": 0}, "links": {"self": "https://www.virustotal.com/api/v3/domains/acessoprotegidolive.com/communicating_files?limit=10"}}
+        ```   
+
+        ### 4. Informações do Alien Vault OTX
+        ```json
+        {'pulses': []}
+        ```
+
+        ### 5. Informações do DNS
+        ```json
+        {"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"acessoprotegidolive.com.","type":1}],"Authority":[{"name":"acessoprotegidolive.com.","type":6,"TTL":1800,"data":"alec.ns.cloudflare.com. dns.cloudflare.com. 2393885819 10000 2400 604800 1800"}],"Comment":"Response from 172.64.32.76."}
+        ```
+
+        ### 6. Cabeçalhos HTTP via cURL
+        ```html
+        Erro ao obter dados de cabeçalho pelo cURL:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0      0   0      0   0      0      0      0  --:--:-- --:--:-- --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:01 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:02 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:03 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:04 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:05 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:06 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:07 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:08 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:09 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:10 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:11 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:12 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:13 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:14 --:--:--      0
+  0      0   0      0   0      0      0      0  --:--:--  0:00:15 --:--:--      0* Could not resolve host: acessoprotegidolive.com
+* Store negative name resolve for acessoprotegidolive.com:80
+* shutting down connection #0
+curl: (6) Could not resolve host: acessoprotegidolive.com
+
+        ```
+
+        ### 7. Informações do certificado SSL/TLS
+        ```json
+        [{"issuer_ca_id":286236,"issuer_name":"C=US, O=Google Trust Services, CN=WE1","common_name":"acessoprotegidolive.com","name_value":"*.acessoprotegidolive.com\nacessoprotegidolive.com","id":22755649082,"entry_timestamp":"2025-11-27T02:29:49.568","not_before":"2025-11-27T01:29:48","not_after":"2026-02-25T02:29:36","serial_number":"2521557a78d4dd820d994c99152fd3d2","result_count":3},{"issuer_ca_id":286242,"issuer_name":"C=US, O=Google Trust Services, CN=WR1","common_name":"acessoprotegidolive.com","name_value":"*.acessoprotegidolive.com\nacessoprotegidolive.com","id":22755623970,"entry_timestamp":"2025-11-27T02:29:30.78","not_before":"2025-11-27T01:29:30","not_after":"2026-02-25T02:27:52","serial_number":"0c63a3365a223e3a1180c3f7873e712c","result_count":3},{"issuer_ca_id":295809,"issuer_name":"C=US, O=Let's Encrypt, CN=E8","common_name":"acessoprotegidolive.com","name_value":"*.acessoprotegidolive.com\nacessoprotegidolive.com","id":22755549216,"entry_timestamp":"2025-11-27T02:23:46.347","not_before":"2025-11-27T01:25:15","not_after":"2026-02-25T01:25:14","serial_number":"060e090db8092f26e6316f27ed27377c1c36","result_count":3},{"issuer_ca_id":295809,"issuer_name":"C=US, O=Let's Encrypt, CN=E8","common_name":"acessoprotegidolive.com","name_value":"*.acessoprotegidolive.com\nacessoprotegidolive.com","id":22755545023,"entry_timestamp":"2025-11-27T02:23:46.128","not_before":"2025-11-27T01:25:15","not_after":"2026-02-25T01:25:14","serial_number":"060e090db8092f26e6316f27ed27377c1c36","result_count":3}]
+        ```
+        

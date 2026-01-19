@@ -1,0 +1,2 @@
+./reports/threat_report_acessoprotegidolive_com.md = 118bcd35b8cf608245e8ea161018b2fdeadfcade47dd31b349ffacc68e48f4b1
+./reports/threat_data_acessoprotegidolive_com.txt = 4ee05ab9835c5f3636c1beef5dc13c6bb2dfc25add63f6c85bb4b043d6df5ce7

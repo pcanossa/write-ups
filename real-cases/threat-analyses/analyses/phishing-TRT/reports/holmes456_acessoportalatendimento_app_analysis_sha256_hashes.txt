@@ -1,0 +1,2 @@
+./reports/threat_report_holmes456_acessoportalatendimento_app.md = 346e299a93f1e2d35f1020c68e085b0fe7e97a2b7dce323e6c0ed7b3be28f784
+./reports/threat_data_holmes456_acessoportalatendimento_app.txt = e2b96a19ff0c4d179511aa46fcd5bfe4eab5acf9ee24c58ef837ff74e9352af1
