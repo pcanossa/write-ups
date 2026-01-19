@@ -1168,7 +1168,7 @@ a0_0xec36();
 (0x162) -> [19] -> wvPUv3a
 ```
 
-![**Figura 36. Índices no dicionário obtido e no código original.** Representação do índice `0x2c7` do código original no dincionário obtido e sua representação no array ordenado.](./images/366.png)
+![**Figura 36. Índices no dicionário obtido e no código original.** Representação do índice `0x2c7` do código original no dincionário obtido e sua representação no array ordenado.](./images/36.png)
 **Figura 36. Índices no dicionário obtido e no código original.** Representação do índice `0x2c7` do código original no dincionário obtido e sua representação no array ordenado.
 
 ##### 10.3.1.5. Substituindo texto decodificado por índices no código original
