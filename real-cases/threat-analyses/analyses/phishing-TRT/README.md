@@ -23,7 +23,7 @@ A mensagem com uso de processo judicial, remetendo à uma forma de intimidação
 **Figura 1. Análise Inicial de Email**
 
 ## 2. ANÁLISE DO DOMÍNIO `libero.it`
-A análise do domínio foi realizada com uso de ferramenta automatizada `Auto_Reputation`, essa, por sua vez, realizando consulta em motores de busca e base de dados sobre reputação e propriedades de domínios (`whois`, `Urlscan`, `Virus Total`...), disponível em [https://github.com/pcanossa/Auto_Reputation](https://github.com/pcanossa/Auto_Reputation).
+A análise do domínio foi realizada com uso de ferramenta automatizada `Auto Reputation`, essa, por sua vez, realizando consulta em motores de busca e base de dados sobre reputação e propriedades de domínios (`whois`, `Urlscan`, `Virus Total`...), disponível em [https://github.com/pcanossa/Auto_Reputation](https://github.com/pcanossa/Auto_Reputation).
 O log da análise segue abaixo:
 ```bash
                                                                                                                                                                           
@@ -995,7 +995,7 @@ Dentro do bloco, observou-se também, características de uso de codificação X
 ![**Figura 33. Bloco de codificação contida dentro do script.** Observado referências ao uso de `Base64`na codificação como a presença 64 em hexadecimal (`0x40`), e alfabeto. Observado referências ao uso de XOR para a codificação cm presença do número 255 em hexadecimal (`0xff`), evidenciando possível uso de máscara de 1 byte.](./images/33.png)
 **Figura 33. Bloco de codificação contida dentro do script.** Observado referências ao uso de `Base64`na codificação como a presença 64 em hexadecimal (`0x40`), e alfabeto. Observado referências ao uso de XOR para a codificação cm presença do número 255 em hexadecimal (`0xff`), evidenciando possível uso de máscara de 1 byte.
 
-O teste de decodificação do array, foi realizada com uso de script em `Python`, com primeira decodificação utilizando o alafabeto personalizado obtido no script original, sendo o resultado obtido, decodificado com uso de XOR com troca de 1 byte, retornando documento em formato JSON com o dicionário do texto codificado salvo no documento `decoded_formatted.json`. O código da ferramenta utilizada, pode ser acessado em  [https://github.com/pcanossa/CustomBase64X_Toolkit](https://github.com/pcanossa/CustomBase64X_Toolkit).
+O teste de decodificação do array, foi realizada com uso de script em `Python`, com primeira decodificação utilizando o alafabeto personalizado obtido no script original, sendo o resultado obtido, decodificado com uso de XOR com troca de 1 byte, retornando documento em formato JSON com o dicionário do texto codificado salvo no documento `decoded_formatted.json`. O código da ferramenta utilizada, pode ser acessado pelo repositório `CustomBase64X Toolkit` , [https://github.com/pcanossa/CustomBase64X_Toolkit](https://github.com/pcanossa/CustomBase64X_Toolkit).
 Grande parte do conteúdo obtido após decodificação, apresentava palavras não decodificadas, representando possível índice de variáveis, para posterior decodificação, enquanto as variáveis decodificadas, revelavam importantes pontos de funcionamento do script no roubo de credenciais e comunicação com o servidor do atacante, como:
 * `https://holmes456.acessoportalatendimento.app:8443/obter-chave`
 * `❌ Email não encontrado no localStorage.`
