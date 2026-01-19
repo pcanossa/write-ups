@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta ao Processo Trabalhista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7edf3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #0077a8;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .header img {
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+            display: none; /* Inicialmente oculto */
+        }
+
+        .container h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .finalizado {
+            font-size: 18px;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .modal {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 350px;
+        }
+
+        .modal input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .modal button {
+            padding: 10px 20px;
+            background-color: #0077a8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .modal button:hover {
+            background-color: #005d87;
+        }
+
+        .loading {
+            display: none;
+            font-size: 18px;
+            color: #007BFF;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="https://pje1g.trf1.jus.br/pje/img/pje2-branco.png" alt="PJe Logo">
+        Processo Judicial Eletrônico
+    </div>
+
+    <!-- Modal -->
+    <div id="cpfCnpjModal" class="modal">
+        <div class="modal-content">
+            <h2>Digite o CPF ou CNPJ para Consultar o Processo</h2>
+            <input type="text" id="cpfCnpjInput" placeholder="CPF ou CNPJ">
+            <button onclick="pesquisar()">Pesquisar</button>
+            <div id="loading" class="loading">Carregando...</div>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container" id="content">
+        <div class="logo">
+            <img src="https://pje1g.trf1.jus.br/pje/img/pje2-branco.png" alt="PJe Logo">
+        </div>
+        <h1>Resposta ao Processo Trabalhista</h1>
+        <p>Prezado(a),</p>
+        <p>Informamos que o processo trabalhista do documento <span class="highlight" id="numeroProcesso"></span> já foi finalizado.</p>
+        <p>A audiência previamente agendada foi cancelada em virtude da conclusão do processo.</p>
+        <p>Todas as partes envolvidas foram devidamente notificadas, e as obrigações legais foram cumpridas conforme os prazos e normas estabelecidos pela legislação trabalhista vigente.</p>
+        <p>Em caso de dúvidas ou mais informações, por favor, entre em contato conosco.</p>
+        <p>Contato: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ed8e8283998c9982ad9d9f828e889e9e82c0828381848388c38e8280c38f9f">[email&#160;protected]</a></p>
+        <p class="finalizado">Processo Finalizado</p>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function pesquisar() {
+            const cpfCnpj = document.getElementById('cpfCnpjInput').value;
+            const loadingElement = document.getElementById('loading');
+            const contentElement = document.getElementById('content');
+
+            if (cpfCnpj === "") {
+                alert("Por favor, insira o CPF ou CNPJ.");
+                return;
+            }
+
+            // Validação de CPF ou CNPJ
+            if (!validaCPF(cpfCnpj) && !validaCNPJ(cpfCnpj)) {
+                alert("CPF ou CNPJ inválido.");
+                return;
+            }
+
+            // Mostrar o "loading"
+            loadingElement.style.display = 'block';
+
+            // Simular um carregamento de 5 segundos
+            setTimeout(function() {
+                // Esconder o modal e o loading após 5 segundos
+                document.getElementById('cpfCnpjModal').style.display = 'none';
+                loadingElement.style.display = 'none';
+
+                // Exibir o conteúdo principal
+                contentElement.style.display = 'block';
+
+                // Substituir o número do processo pelo CPF ou CNPJ inserido
+                document.getElementById('numeroProcesso').innerText = cpfCnpj;
+            }, 5000); // 5000 ms = 5 segundos
+        }
+
+        // Função de validação de CPF
+        function validaCPF(cpf) {
+            cpf = cpf.replace(/[^\d]+/g, ''); // Remove caracteres não numéricos
+            if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) return false; // Verifica formatação
+
+            let soma = 0, resto;
+            for (let i = 1; i <= 9; i++) soma += parseInt(cpf.substring(i - 1, i)) * (11 - i);
+            resto = (soma * 10) % 11;
+            if ((resto === 10) || (resto === 11)) resto = 0;
+            if (resto !== parseInt(cpf.substring(9, 10))) return false;
+
+            soma = 0;
+            for (let i = 1; i <= 10; i++) soma += parseInt(cpf.substring(i - 1, i)) * (12 - i);
+            resto = (soma * 10) % 11;
+            if ((resto === 10) || (resto === 11)) resto = 0;
+            return resto === parseInt(cpf.substring(10, 11));
+        }
+
+        // Função de validação de CNPJ
+        function validaCNPJ(cnpj) {
+            cnpj = cnpj.replace(/[^\d]+/g, ''); // Remove caracteres não numéricos
+            if (cnpj.length !== 14 || /^(\d)\1{13}$/.test(cnpj)) return false; // Verifica formatação
+
+            let tamanho = cnpj.length - 2;
+            let numeros = cnpj.substring(0, tamanho);
+            let digitos = cnpj.substring(tamanho);
+            let soma = 0, pos = tamanho - 7;
+
+            for (let i = tamanho; i >= 1; i--) {
+                soma += numeros.charAt(tamanho - i) * pos--;
+                if (pos < 2) pos = 9;
+            }
+
+            let resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+            if (resultado !== parseInt(digitos.charAt(0))) return false;
+
+            tamanho = tamanho + 1;
+            numeros = cnpj.substring(0, tamanho);
+            soma = 0;
+            pos = tamanho - 7;
+
+            for (let i = tamanho; i >= 1; i--) {
+                soma += numeros.charAt(tamanho - i) * pos--;
+                if (pos < 2) pos = 9;
+            }
+
+            resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+            return resultado === parseInt(digitos.charAt(1));
+        }
+    </script>
+</body>
+</html>

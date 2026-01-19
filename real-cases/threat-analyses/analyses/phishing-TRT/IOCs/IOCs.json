@@ -1,0 +1,85 @@
+{
+  "pulse_info": {
+    "name": "Campanha Phishing - Falsa Intimação TRT - Janeiro 2026",
+    "description": "Campanha de phishing utilizando engenharia social e autoridade do TRT para roubo de credenciais Microsoft Live e dados de CPF/CNPJ.",
+    "references": ["Relatório de Análise Técnica - Janeiro 2026"],
+    "tags": ["phishing", "trt", "microsoft-live", "credential-harvesting", "social-engineering"]
+  },
+  "indicators": [
+    {
+      "indicator": "mariana600065@libero.it",
+      "type": "email",
+      "description": "Remetente inicial da campanha de phishing"
+    },
+    {
+      "indicator": "213.209.10.17",
+      "type": "IPv4",
+      "description": "Servidor SMTP de envio (libero.it) localizado na Itália"
+    },
+    {
+      "indicator": "157.254.243.49",
+      "type": "IPv4",
+      "description": "IP de origem (salto inicial) identificado via cabeçalho SAMSUNG/M247"
+    },
+    {
+      "indicator": "191.252.156.7",
+      "type": "IPv4",
+      "description": "IP da VPS de hospedagem da landing page clone"
+    },
+    {
+      "indicator": "vpsw4940.publiccloud.com.br.",
+      "type": "domain",
+      "description": "Identificação de Host da VPS de hospedagem da landing page clone"
+    },
+    {
+      "indicator": "libero.it",
+      "type": "domain",
+      "description": "Domínio utilizado para o envio dos e-mails maliciosos"
+    },
+    {
+      "indicator": "acessoportalatendimento.app",
+      "type": "domain",
+      "description": "Domínio principal da infraestrutura de backend/C2"
+    },
+    {
+      "indicator": "acessoprotegidolive.com",
+      "type": "domain",
+      "description": "Domínio de redirecionamento e hospedagem da landing page clone"
+    },
+    {
+      "indicator": "processo-online.com.br",
+      "type": "domain",
+      "description": "Domínio inexistente utilizado para contato falso (Typosquatting)"
+    },
+    {
+      "indicator": "https://acess200.acessoportalatendimento.app/",
+      "type": "URL",
+      "description": "URL de destino contida no botão do e-mail"
+    },
+    {
+      "indicator": "https://verificacentral.acessoprotegidolive.com/",
+      "type": "URL",
+      "description": "Página de phishing (clone Microsoft) com desafio Cloudflare"
+    },
+    {
+      "indicator": "https://holmes456.acessoportalatendimento.app:8443/validate",
+      "type": "URL",
+      "description": "Endpoint C2 para validação e exfiltração de e-mail"
+    },
+    {
+      "indicator": "https://holmes456.acessoportalatendimento.app:8443/login",
+      "type": "URL",
+      "description": "Endpoint C2 para exfiltração de credenciais (email e senha)"
+    },
+    {
+      "indicator": "https://holmes456.acessoportalatendimento.app:8443/generate-token",
+      "type": "URL",
+      "description": "Endpoint C2 para geração de tokens de rastreamento de vítimas"
+    },
+    {
+      "indicator": "https://holmes456.acessoportalatendimento.app:8443/obter-chave",
+      "type": "URL",
+      "description": "Endpoint C2 para obtenção de chaves de identificação"
+    }
+  ]
+}

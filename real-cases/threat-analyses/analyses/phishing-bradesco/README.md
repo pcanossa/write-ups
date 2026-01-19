@@ -835,8 +835,7 @@ Name:   v2.run.app
 Address: 34.143.78.2
 Name:   v2.run.app
 Address: 34.143.75.2
-
-                                                                                                                                                                          
+                                                                                                                           
 ┌──(kali㉿kali)-[~]
 └─$ nslookup segu-ran-ca-709035289742.southamerica-east1.run.app
 Server:         192.168.192.2

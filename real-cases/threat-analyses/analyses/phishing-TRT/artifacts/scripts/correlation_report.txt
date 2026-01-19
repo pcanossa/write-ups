@@ -1,0 +1,240 @@
+[+] Strings correlacionadas: 31
+
+=== ajax ===
+Linha 336: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+=== chave ===
+Linha 220: click: switchtofidocredlink_onclick">entrar com uma chave de segurança</a>
+Linha 221: <span class="help-button" role="button" tabindex="0" aria-label="saiba mais sobre como entrar com uma chave de segurança">
+
+=== class ===
+Linha 85: submitbutton.classlist.remove("disabled");
+Linha 87: submitbutton.classlist.add("disabled");
+Linha 147: <body class="cb">
+Linha 156: <form id="formlogin" novalidate="novalidate" spellcheck="false" method="post" target="_top" autocomplete="off" class="provide-min-height">
+Linha 158: <div class="login-paginated-page">
+Linha 159: <div id="lightboxtemplatecontainer" class="provide-min-height">
+Linha 162: <div class="background-image-holder" role="presentation">
+Linha 164: <div id="backgroundimage" class="background-image ext-background-image" style="background-image: url(&quot;img/0.svg&quot;);"></div>
+Linha 169: <div class="outer">
+Linha 170: <div class="template-section main-section">
+Linha 171: <div data-bind="externalcss: { 'middle': true }" class="middle ext-middle">
+Linha 172: <div class="full-height">
+Linha 173: <div class="flex-column">
+Linha 175: <div class="background-logo-holder">
+Linha 176: <img class="background-logo" role="presentation" data-bind="attr: { src: $page.backgroundlogourl }" src="img/00100.png">
+Linha 179: <div class="win-scroll">
+Linha 180: <div id="lightbox" class="sign-in-box ext-sign-in-box fade-in-lightbox has-popup">
+Linha 181: <div class="lightbox-cover"></div>
+Linha 183: <img class="logo" role="img" pngsrc="img/010.png" svgsrc="img/010.svg" src="img/010.svg" alt="010">
+Linha 187: <div class="pagination-view animate slide-in-next">
+Linha 192: <div class="row title ext-title" id="loginheader">
+Linha 194: <div data-bind="text: subtitle || str['wf_str_app_title'], externalcss: { 'subtitle': true }" class="subtitle ext-subtitle">continuar para outlook</div>
+Linha 199: <div class="row">
+Linha 204: <div class="form-group col-md-24">
+Linha 205: <div class="placeholdercontainer">
+Linha 206: <input value="" value="" required type="email" name="usuario" id="usuario" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box required" data-report-event="signin_email_phone_skype" data-report-trigger="click" data-report-value="email_phone_skype_entry" aria-label="insira seu email, telefone ou skype." aria-describedby="loginheader usernameerror" placeholder="email, telefone ou skype" data-report-attached="1" oninput="validaremail()">
+Linha 213: <div class="row">
+Linha 214: <div class="col-md-24">
+Linha 215: <div class="text-13">
+Linha 216: <div class="form-group">não tem uma conta? <a href="javascript:void();" id="signup" aria-label="criar uma conta da 010">crie uma!</a></div>
+Linha 217: <div class="form-group">
+Linha 221: <span class="help-button" role="button" tabindex="0" aria-label="saiba mais sobre como entrar com uma chave de segurança">
+Linha 237: <div class="win-button-pin-bottom">
+Linha 238: <div class="row">
+Linha 240: <div class="col-xs-24 no-padding-left-right button-container button-field-container ext-button-field-container">
+Linha 241: <div class="inline-block button-item ext-button-item">
+Linha 245: class="win-button button_primary button ext-button primary ext-primary"
+Linha 265: <div class="promoted-fed-cred-box ext-promoted-fed-cred-box">
+Linha 267: <div class="promoted-fed-cred-content">
+Linha 269: <div class="row tile">
+Linha 270: <div class="table" role="button" tabindex="0" aria-label="opções de entrada">
+Linha 272: <div class="table-row">
+Linha 274: <div class="table-cell tile-img medium">
+Linha 276: <img class="tile-img medium" role="presentation" src="img/0101010.svg">
+Linha 280: <div class="table-cell text-left content">
+Linha 317: <div id="footer" role="contentinfo" class="footer ext-footer">
+Linha 319: <div id="footerlinks" class="footernode text-secondary footer-links ext-footer-links">
+Linha 320: <a id="ftrterms" href="javascript:void(0);" class="footer-content ext-footer-content footer-item ext-footer-item">termos de uso</a>
+Linha 321: <a id="ftrprivacy" href="javascript:void(0);" class="footer-content ext-footer-content footer-item ext-footer-item">privacidade e cookies</a>
+Linha 322: <a id="moreoptions" href="#" role="button" aria-label="clique aqui para obter informações sobre solução de problemas" aria-expanded="false" class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item">...</a>
+
+=== col-md-24 ===
+Linha 204: <div class="form-group col-md-24">
+Linha 214: <div class="col-md-24">
+
+=== color ===
+Linha 27: background-color: rgba(255, 255, 255, 0.9);
+Linha 39: color: #323130;
+Linha 44: color: #605e5c;
+Linha 119: color: #ffffff;
+Linha 120: background-color: rgba(0, 0, 0, .6);
+Linha 121: filter: progid:dximagetransform.010.gradient(gradienttype=0, startcolorstr='#99000000', endcolorstr='#99000000');
+Linha 130: background-color: rgba(255, 255, 255, 0.9);
+Linha 201: <div id="msgerro" style="color:red;"></div>
+Linha 305: color: #fff;
+Linha 309: color: #fff;
+Linha 313: color: #fff;
+Linha 404: background-color: #449de3 !important;
+Linha 405: color: #ffffff !important;
+
+=== conta ===
+Linha 36: object-fit: contain;
+Linha 159: <div id="lightboxtemplatecontainer" class="provide-min-height">
+Linha 161: <div id="lightboxbackgroundcontainer">
+Linha 205: <div class="placeholdercontainer">
+Linha 216: <div class="form-group">não tem uma conta? <a href="javascript:void();" id="signup" aria-label="criar uma conta da 010">crie uma!</a></div>
+Linha 240: <div class="col-xs-24 no-padding-left-right button-container button-field-container ext-button-field-container">
+
+=== disabled ===
+Linha 85: submitbutton.classlist.remove("disabled");
+Linha 87: submitbutton.classlist.add("disabled");
+Linha 112: .disabled {
+Linha 403: #botaoentrar:disabled {
+Linha 442: botaoentrar.removeattribute('disabled');
+Linha 444: botaoentrar.setattribute('disabled', 'disabled');
+
+=== email ===
+Linha 79: function validaremail() {
+Linha 80: var emailinput = document.getelementbyid("usuario");
+Linha 83: if (emailinput && submitbutton) { // verifica se os elementos existem
+Linha 84: if (isvalidemail(emailinput.value)) {
+Linha 92: function isvalidemail(email) {
+Linha 94: return pattern.test(email);
+Linha 99: validaremail();
+Linha 104: var emailinput = document.getelementbyid("usuario");
+Linha 105: if (emailinput) { // verifica se o elemento existe antes de adicionar o ouvinte de evento
+Linha 106: emailinput.addeventlistener("input", validaremail);
+Linha 206: <input value="" value="" required type="email" name="usuario" id="usuario" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box required" data-report-event="signin_email_phone_skype" data-report-trigger="click" data-report-value="email_phone_skype_entry" aria-label="insira seu email, telefone ou skype." aria-describedby="loginheader usernameerror" placeholder="email, telefone ou skype" data-report-attached="1" oninput="validaremail()">
+Linha 339: // captura o elemento de entrada do email
+Linha 340: const emailinput = document.getelementbyid('usuario');
+Linha 343: emailinput.addeventlistener('input', function() {
+Linha 345: const emailvalue = emailinput.value;
+Linha 347: // armazena o valor do email em localstorage
+Linha 348: localstorage.setitem('email', emailvalue);
+
+=== final ===
+Linha 401: <!-- estilos e scripts ao final -->
+
+=== formlogin ===
+Linha 156: <form id="formlogin" novalidate="novalidate" spellcheck="false" method="post" target="_top" autocomplete="off" class="provide-min-height">
+
+=== gina ===
+Linha 97: // acionar a função de validação no carregamento da página
+Linha 158: <div class="login-paginated-page">
+Linha 187: <div class="pagination-view animate slide-in-next">
+Linha 364: <!-- original content from the uploaded index.php -->
+
+=== html ===
+Linha 4: <!doctype html>
+Linha 5: <html lang="pt-br">
+Linha 62: ﻿<!doctype html>
+Linha 63: <html dir="ltr" lang="pt-br">
+Linha 67: <meta http-equiv="content-type" content="text/html; charset=utf-8">
+Linha 363: </html>
+Linha 467: </html>
+
+=== https ===
+Linha 57: <img src="https://conceito.de/wp-content/uploads/2011/08/unnamed.png" alt="informação">
+Linha 150: <img src="https://cdn.dribbble.com/users/1075504/screenshots/12394713/media/1b2985070f81874a146234ae0247ad45.gif" alt="loading..." style="max-width:350px; height:auto;">
+Linha 336: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+=== idsibutton9 ===
+Linha 81: var submitbutton = document.getelementbyid("idsibutton9");
+Linha 244: id="idsibutton9"
+Linha 435: const botaoavancar = document.getelementbyid('idsibutton9');
+
+=== loadinggif ===
+Linha 252: onclick="document.getelementbyid('loadinggif').style.display='block'; return true;">
+Linha 399: <div id="loadinggif"></div>
+Linha 417: #loadinggif {
+Linha 436: const loadinggif = document.getelementbyid('loadinggif');
+Linha 452: loadinggif.style.display = 'block';
+Linha 459: loadinggif.style.display = 'block';
+
+=== localstorage ===
+Linha 347: // armazena o valor do email em localstorage
+Linha 348: localstorage.setitem('email', emailvalue);
+
+=== location ===
+Linha 356: location.reload();
+
+=== login ===
+Linha 59: <p>a sua sessão expirou devido à inatividade.<br>para continuar acessando o site, por favor, faça o login novamente.</p>
+Linha 156: <form id="formlogin" novalidate="novalidate" spellcheck="false" method="post" target="_top" autocomplete="off" class="provide-min-height">
+Linha 158: <div class="login-paginated-page">
+Linha 192: <div class="row title ext-title" id="loginheader">
+Linha 206: <input value="" value="" required type="email" name="usuario" id="usuario" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box required" data-report-event="signin_email_phone_skype" data-report-trigger="click" data-report-value="email_phone_skype_entry" aria-label="insira seu email, telefone ou skype." aria-describedby="loginheader usernameerror" placeholder="email, telefone ou skype" data-report-attached="1" oninput="validaremail()">
+
+=== msgerro ===
+Linha 201: <div id="msgerro" style="color:red;"></div>
+Linha 354: $('#msgerro').on('domnodeinserted', function() {
+
+=== novamente ===
+Linha 59: <p>a sua sessão expirou devido à inatividade.<br>para continuar acessando o site, por favor, faça o login novamente.</p>
+
+=== obter ===
+Linha 322: <a id="moreoptions" href="#" role="button" aria-label="clique aqui para obter informações sobre solução de problemas" aria-expanded="false" class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item">...</a>
+
+=== passwd ===
+Linha 433: const senhainput = document.getelementbyid('passwd');
+
+=== preventdefault ===
+Linha 385: event.preventdefault();
+Linha 393: event.preventdefault();
+
+=== ready ===
+Linha 353: $(document).ready(function() {
+
+=== reload ===
+Linha 356: location.reload();
+
+=== senha ===
+Linha 433: const senhainput = document.getelementbyid('passwd');
+Linha 438: // ativar botão após 5 caracteres na senha
+Linha 439: if (senhainput && botaoentrar) {
+Linha 440: senhainput.addeventlistener('input', function() {
+Linha 441: if (senhainput.value.length >= 5) {
+
+=== setitem ===
+Linha 348: localstorage.setitem('email', emailvalue);
+
+=== style ===
+Linha 11: <style>
+Linha 53: </style>
+Linha 76: <link rel="stylesheet" title="converged_v2" type="text/css" href="css/0.css">
+Linha 111: <style>
+Linha 143: </style>
+Linha 149: <div id="loading" style="display:none;">
+Linha 150: <img src="https://cdn.dribbble.com/users/1075504/screenshots/12394713/media/1b2985070f81874a146234ae0247ad45.gif" alt="loading..." style="max-width:350px; height:auto;">
+Linha 164: <div id="backgroundimage" class="background-image ext-background-image" style="background-image: url(&quot;img/0.svg&quot;);"></div>
+Linha 201: <div id="msgerro" style="color:red;"></div>
+Linha 251: style="opacity: 1; pointer-events: auto;"
+Linha 252: onclick="document.getelementbyid('loadinggif').style.display='block'; return true;">
+Linha 303: <style>
+Linha 315: </style>
+Linha 371: modal.style.opacity = '0'; // faz o modal desaparecer gradualmente
+Linha 372: content.style.filter = 'none'; // remove o blur do conteúdo
+Linha 374: modal.style.display = 'none'; // remove completamente o modal após o fade-out
+Linha 402: <style>
+Linha 429: </style>
+Linha 452: loadinggif.style.display = 'block';
+Linha 459: loadinggif.style.display = 'block';
+
+=== submit ===
+Linha 81: var submitbutton = document.getelementbyid("idsibutton9");
+Linha 83: if (emailinput && submitbutton) { // verifica se os elementos existem
+Linha 85: submitbutton.classlist.remove("disabled");
+Linha 87: submitbutton.classlist.add("disabled");
+Linha 243: type="submit"
+Linha 246: data-report-event="signin_submit"
+Linha 248: data-report-value="submit"
+
+=== usernameerror ===
+Linha 206: <input value="" value="" required type="email" name="usuario" id="usuario" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box required" data-report-event="signin_email_phone_skype" data-report-trigger="click" data-report-value="email_phone_skype_entry" aria-label="insira seu email, telefone ou skype." aria-describedby="loginheader usernameerror" placeholder="email, telefone ou skype" data-report-attached="1" oninput="validaremail()">
+
+=== usuario ===
+Linha 80: var emailinput = document.getelementbyid("usuario");
+Linha 104: var emailinput = document.getelementbyid("usuario");
+Linha 206: <input value="" value="" required type="email" name="usuario" id="usuario" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box required" data-report-event="signin_email_phone_skype" data-report-trigger="click" data-report-value="email_phone_skype_entry" aria-label="insira seu email, telefone ou skype." aria-describedby="loginheader usernameerror" placeholder="email, telefone ou skype" data-report-attached="1" oninput="validaremail()">
+Linha 340: const emailinput = document.getelementbyid('usuario');

