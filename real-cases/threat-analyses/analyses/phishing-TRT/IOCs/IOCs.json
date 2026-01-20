@@ -1,85 +1,98 @@
 {
-  "pulse_info": {
-    "name": "Campanha Phishing - Falsa Intimação TRT - Janeiro 2026",
-    "description": "Campanha de phishing utilizando engenharia social e autoridade do TRT para roubo de credenciais Microsoft Live e dados de CPF/CNPJ.",
-    "references": ["Relatório de Análise Técnica - Janeiro 2026"],
-    "tags": ["phishing", "trt", "microsoft-live", "credential-harvesting", "social-engineering"]
-  },
+  "name": "Phishing Campaign - Fake TRT / Microsoft Credentials Theft",
+  "description": "Campanha de phishing ativa em Jan/2026 utilizando isca do Tribunal Regional do Trabalho (TRT) para roubo de credenciais Microsoft e dados sensíveis. Infraestrutura com Cloudflare, VPS nacional (Locaweb), uso de VPN/Proxy e evasão por CAPTCHA.",
+  "tags": [
+    "phishing",
+    "credential-harvesting",
+    "cloudflare",
+    "trt",
+    "microsoft",
+    "email-fraud",
+    "brazil",
+    "vpn",
+    "proxy",
+    "locaweb"
+  ],
   "indicators": [
     {
-      "indicator": "mariana600065@libero.it",
-      "type": "email",
-      "description": "Remetente inicial da campanha de phishing"
+      "indicator": "libero.it",
+      "type": "domain",
+      "description": "Domínio utilizado como origem do email de phishing (remetente forjado)"
+    },
+    {
+      "indicator": "213.209.17.209",
+      "type": "IPv4",
+      "description": "IP associado ao domínio libero.it (infraestrutura Italiaonline)"
     },
     {
       "indicator": "213.209.10.17",
       "type": "IPv4",
-      "description": "Servidor SMTP de envio (libero.it) localizado na Itália"
+      "description": "Servidor SMTP do dominio libero.it utilizado no envio do email"
+    },
+    {
+      "indicator": "smtp-17.italiaonline.it",
+      "type": "hostname",
+      "description": "Hostname SMTP identificado nos cabeçalhos do email"
     },
     {
       "indicator": "157.254.243.49",
       "type": "IPv4",
-      "description": "IP de origem (salto inicial) identificado via cabeçalho SAMSUNG/M247"
-    },
-    {
-      "indicator": "191.252.156.7",
-      "type": "IPv4",
-      "description": "IP da VPS de hospedagem da landing page clone"
-    },
-    {
-      "indicator": "vpsw4940.publiccloud.com.br.",
-      "type": "domain",
-      "description": "Identificação de Host da VPS de hospedagem da landing page clone"
-    },
-    {
-      "indicator": "libero.it",
-      "type": "domain",
-      "description": "Domínio utilizado para o envio dos e-mails maliciosos"
+      "description": "IP de origem do envio do email - nó de saída VPN/Proxy (ASN AS9009 - M247)"
     },
     {
       "indicator": "acessoportalatendimento.app",
       "type": "domain",
-      "description": "Domínio principal da infraestrutura de backend/C2"
+      "description": "Domínio utilizado como landing page da campanha de phishing"
     },
     {
-      "indicator": "acessoprotegidolive.com",
+      "indicator": "acess200.acessoportalatendimento.app",
       "type": "domain",
-      "description": "Domínio de redirecionamento e hospedagem da landing page clone"
+      "description": "Subdomínio utilizado no botão do email de phishing"
     },
     {
-      "indicator": "processo-online.com.br",
+      "indicator": "holmes456.acessoportalatendimento.app",
       "type": "domain",
-      "description": "Domínio inexistente utilizado para contato falso (Typosquatting)"
+      "description": "Subdomínio utilizado para envio de dados coletados pelo site phishing"
+    },
+    {
+      "indicator": "https://holmes456.acessoportalatendimento.app:8443",
+      "type": "URL",
+      "description": "URL utilizado para envio de dados coletados pelo site phishing"
+    },
+     {
+      "indicator": "d8eefc899a5db32ae7d65d07f182d2d9524b8b8a8786b2933a5bff3cad73a590",
+      "type": "file",
+      "description": "Fingerprint SHA256 de script de captura e envio de dados pela página phishing"
+    },
+    {
+      "indicator": "verificacentral.acessoprotegidolive.com",
+      "type": "domain",
+      "description": "Domínio de redirecionamento pós-acesso com challenge Cloudflare"
+    },
+    {
+      "indicator": "vpsw4940.publiccloud.com.br",
+      "type": "hostname",
+      "description": "Hostname identificado no Censys - VPS utilizada como backend da campanha"
+    },
+    {
+      "indicator": "191.252.156.7",
+      "type": "IPv4",
+      "description": "IP real do servidor backend identificado via Censys (Locaweb - Brasil)"
+    },
+    {
+      "indicator": "E539CAD0D0DFCD34C6AA073EF8D8E7716777799081F8BE6B6465E8024B410E7C",
+      "type": "FileHash-SHA256",
+      "description": "Fingerprint SHA256 do certificado SSL emitido para *.acessoportalatendimento.app"
     },
     {
       "indicator": "https://acess200.acessoportalatendimento.app/",
       "type": "URL",
-      "description": "URL de destino contida no botão do e-mail"
+      "description": "URL presente no botão do email de phishing"
     },
     {
       "indicator": "https://verificacentral.acessoprotegidolive.com/",
       "type": "URL",
-      "description": "Página de phishing (clone Microsoft) com desafio Cloudflare"
-    },
-    {
-      "indicator": "https://holmes456.acessoportalatendimento.app:8443/validate",
-      "type": "URL",
-      "description": "Endpoint C2 para validação e exfiltração de e-mail"
-    },
-    {
-      "indicator": "https://holmes456.acessoportalatendimento.app:8443/login",
-      "type": "URL",
-      "description": "Endpoint C2 para exfiltração de credenciais (email e senha)"
-    },
-    {
-      "indicator": "https://holmes456.acessoportalatendimento.app:8443/generate-token",
-      "type": "URL",
-      "description": "Endpoint C2 para geração de tokens de rastreamento de vítimas"
-    },
-    {
-      "indicator": "https://holmes456.acessoportalatendimento.app:8443/obter-chave",
-      "type": "URL",
-      "description": "Endpoint C2 para obtenção de chaves de identificação"
+      "description": "URL de redirecionamento protegida por Cloudflare Managed Challenge"
     }
   ]
 }

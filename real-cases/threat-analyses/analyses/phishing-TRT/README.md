@@ -186,6 +186,7 @@ Ao utilizar a ferramenta `nslookup` para mapeamento do servidor DNS corresponden
 ![**Figura 6. Análise do IP `157.254.243.49`**. Análise pelo `shodan`, retornando IP ser de propriedade da ISP **ASN AS9009 – M247 Europe SRL**. Análise pelo `BGP HE`, confirmando a multilocalidade d ISP, distribuida mundialmente.](./images/6.png)
 **Figura 6. Análise do IP `157.254.243.49`**. Análise pelo `shodan`, retornando IP ser de propriedade da ISP **ASN AS9009 – M247 Europe SRL**. Análise pelo `BGP HE`, confirmando a multilocalidade d ISP, distribuida mundialmente.
 </br>
+
 ![**Figura 7. Análise de IP pelo Scamnalytics**. Retorno de risco médio de fraude e host como um nó de saída de VPN](./images/7.png)
 **Figura 7. Análise de IP pelo Scamnalytics**. Retorno de risco médio de fraude e host como um nó de saída de VPN
 
